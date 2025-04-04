@@ -55,6 +55,7 @@ for (const config of CONFIGS) {
 
 	if (!config.id) {
 		console.log(c.red("Gist ID not found"));
+
 		continue;
 	}
 
