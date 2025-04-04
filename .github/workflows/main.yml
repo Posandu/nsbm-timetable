@@ -1,0 +1,31 @@
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update_calanders:
+    environment: main
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - run: bun install
+
+      - name: Update Calanders
+        env:
+          CAL_LINK_24_3_FDN: ${{ secrets.CAL_LINK_24_3_FDN }}
+        run: bash ./scripts/download.sh
+
+      - run: bun run index.ts
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+          GIST_ID_24_3_FDN: ${{ secrets.GIST_ID_24_3_FDN }}

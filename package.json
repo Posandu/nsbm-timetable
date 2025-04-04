@@ -1,0 +1,19 @@
+{
+  "name": "timetable",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@octokit/core": "^6.1.4",
+    "chalk": "^5.4.1",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "ical-generator": "^8.1.1"
+  }
+}
