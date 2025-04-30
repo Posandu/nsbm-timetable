@@ -24,6 +24,17 @@ console.log(
 
 console.log();
 
+function isEvent(text: string) {
+	return [...text].every((c) => c === c.toUpperCase());
+}
+
+function capitalizeEachWord(str: string) {
+	return str
+		.split(" ")
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(" ");
+}
+
 function getDateFromValue(val: CellValue): Date | undefined {
 	if (val instanceof Date) return val;
 	if (typeof val === "object" && val !== null) {
@@ -203,7 +214,9 @@ for (const config of CONFIGS) {
 			calendar.createEvent({
 				start: subject.start,
 				end: subject.end,
-				summary: subject.name,
+				summary: isEvent(subject.name)
+					? capitalizeEachWord(subject.name)
+					: subject.name,
 			});
 		}
 	}
