@@ -22,10 +22,10 @@ jobs:
 
       - name: Update Calanders
         env:
-          CAL_LINK_24_3_FDN: ${{ secrets.CAL_LINK_24_3_FDN }}
+          CAL_LINK: ${{ secrets.CAL_LINK }}
         run: bash ./scripts/download.sh
 
       - run: bun run index.ts
         env:
           TOKEN: ${{ secrets.TOKEN }}
-          GIST_ID_24_3_FDN: ${{ secrets.GIST_ID_24_3_FDN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
