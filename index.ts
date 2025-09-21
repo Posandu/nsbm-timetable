@@ -3,37 +3,20 @@ import c from "chalk";
 import ical from "ical-generator";
 import { Octokit } from "@octokit/core";
 
-const CONFIGS = [
-	{
-		name: "24.3-fdn",
-		worksheet: "24.3 & 24.4 FDN",
-		timeTableStart: 7,
-		dataIndex: 2,
-		summaryCell: "B4",
-		timeSlotRegex: /(\d+)\.(\d+) ([a-zA-Z]+)\s?-\s?(\d+)\.(\d+) ([a-zA-Z]+)/,
-		id: process.env.GIST_ID_24_3_FDN,
-	},
-];
+const config = {
+	name: "25.3-degree",
+	worksheet: "25.3 Timetable",
+	timeTableStart: 25,
+	dataIndex: 2,
+	summaryCell: "B4",
+	timeSlotRegex: /(\d+)\.(\d+) ([a-zA-Z]+)\s?-\s?(\d+)\.(\d+) ([a-zA-Z]+)/,
+	id: process.env.GIST_ID,
+};
 
 console.log(c.bgBlue.black("NSBM Timetable Converter"));
-console.log(
-	c.green("Found"),
-	c.yellow(CONFIGS.length),
-	c.green("configurations")
-);
+console.log(c.green("Found"), c.yellow(config.name));
 
 console.log();
-
-function isEvent(text: string) {
-	return [...text].every((c) => c === c.toUpperCase());
-}
-
-function capitalizeEachWord(str: string) {
-	return str
-		.split(" ")
-		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-		.join(" ");
-}
 
 function getDateFromValue(val: CellValue): Date | undefined {
 	if (val instanceof Date) return val;
@@ -61,179 +44,199 @@ function getHours(hours: number, sign: string) {
 	}
 }
 
-for (const config of CONFIGS) {
-	console.log(c.blue("File:"), c.yellow(config.name));
+console.log(c.blue("File:"), c.yellow(config.name));
 
-	if (!config.id) {
-		console.log(c.red("Gist ID not found"));
+if (!config.id) {
+	console.log(c.red("Gist ID not found"));
 
-		continue;
-	}
-
-	const timetable = await Bun.file(
-		"./downloaded/" + config.name + ".xlsx"
-	).arrayBuffer();
-
-	const workbook = new ExcelJS.Workbook();
-	await workbook.xlsx.load(timetable);
-
-	const worksheet = workbook.getWorksheet(config.worksheet);
-	let weeks: {
-		start: Date;
-		end: Date;
-		name: string;
-	}[][] = [];
-	let row = config.timeTableStart;
-	let lastWeek: Date[] = [];
-
-	if (!worksheet) throw new Error("Worksheet not found");
-
-	const MODULE_NAME = worksheet
-		.getCell(config.summaryCell)
-		.text.replace("Time Table - ", "")
-		.trim();
-
-	console.log(c.blue("Module:"), c.yellow(MODULE_NAME));
-
-	while (true) {
-		const currentRow = worksheet.getRow(row);
-
-		if (!currentRow.getCell(config.dataIndex).text.match(/\d|\s/g)) break;
-
-		/* date check */
-		if (isDate(currentRow.getCell("C").value)) {
-			lastWeek = [];
-			weeks.push([]);
-
-			currentRow.eachCell((cell, i) => {
-				if (isDate(cell.value)) lastWeek.push(getDateFromValue(cell.value)!);
-			});
-		}
-
-		const match = currentRow.getCell("B").text.match(config.timeSlotRegex) as
-			| [string, number, number, string, number, number, string]
-			| null;
-
-		if (match) {
-			const week = weeks[weeks.length - 1];
-
-			if (!week) throw new Error("Week not found");
-
-			/**
-			 * Group - 09.00 am - 10.00 am
-			 *         ^  ^  ^     ^ ^  ^
-			 *         1  2  3     4 5  6
-			 */
-
-			for (let day = 0; day < 5; day++) {
-				const cell = currentRow.getCell(config.dataIndex + 1 + day).text.trim();
-				const dateObj = lastWeek[day];
-
-				if (!dateObj) throw new Error("No date found");
-
-				// no subject
-				if (!cell) continue;
-
-				const start = new Date();
-				const end = new Date();
-
-				start.setTime(dateObj.getTime());
-				end.setTime(dateObj.getTime());
-
-				start.setHours(getHours(+match[1], match[3]), 0, 0);
-				end.setHours(getHours(+match[4], match[6]), 0, 0);
-
-				week.push({
-					name: cell,
-					start,
-					end,
-				});
-			}
-		}
-
-		row++;
-	}
-
-	weeks = weeks.map((weekI) => {
-		const merge = (week: typeof weekI) => {
-			const sorted = week.sort((a, b) => a.start.getTime() - b.start.getTime());
-			const merged: typeof week = [];
-
-			for (let i = 0; i < sorted.length; i++) {
-				const curr = sorted[i]!;
-				const next = sorted[i + 1];
-
-				/**
-				 * if all the events in the same day have the same title, merge em
-				 */
-				const sameday = week.filter(
-					(e) => e.start.getDay() === curr.start.getDay()
-				);
-
-				if (sameday.length > 2 && sameday.every((e) => e.name === curr.name)) {
-					i += sameday.length - 1;
-
-					const end = new Date(curr.end.getTime());
-
-					end.setHours(17, 0, 0);
-
-					merged.push({
-						name: curr.name,
-						start: curr.start,
-						end,
-					});
-
-					continue;
-				}
-
-				if (
-					next &&
-					curr.name === next.name &&
-					curr.end.getTime() === next.start.getTime()
-				) {
-					curr.end = next.end;
-				}
-
-				merged.push(curr);
-
-				i++;
-			}
-
-			return merged;
-		};
-
-		return merge(weekI);
-	});
-
-	console.log(c.blue("Weeks:"), c.yellow(weeks.length));
-
-	const calendar = ical({ name: "NSBM Timetable", timezone: "Asia/Colombo" });
-
-	for (const week of weeks) {
-		for (const subject of week) {
-			calendar.createEvent({
-				start: subject.start,
-				end: subject.end,
-				summary: isEvent(subject.name)
-					? capitalizeEachWord(subject.name)
-					: subject.name,
-			});
-		}
-	}
-
-	const octokit = new Octokit({
-		auth: process.env.TOKEN,
-	});
-
-	await octokit.request("PATCH /gists/{gist_id}", {
-		gist_id: config.id,
-		files: {
-			[config.name + ".ics"]: {
-				content: calendar.toString(),
-			},
-		},
-		headers: {
-			"X-GitHub-Api-Version": "2022-11-28",
-		},
-	});
+	process.exit(1);
 }
+
+const timetable = await Bun.file(
+	"./downloaded/" + config.name + ".xlsx"
+).arrayBuffer();
+
+const workbook = new ExcelJS.Workbook();
+await workbook.xlsx.load(timetable);
+
+const worksheet = workbook.getWorksheet(config.worksheet);
+
+if (!worksheet) throw new Error("Worksheet not found");
+
+const MODULE_NAME = worksheet
+	.getCell(config.summaryCell)
+	.text.replace("Time Table - ", "")
+	.trim();
+
+console.log(c.blue("Module:"), c.yellow(MODULE_NAME));
+
+let weeks: {
+	start: Date;
+	end: Date;
+	name: string;
+}[] = [];
+let row = config.timeTableStart;
+let lastWeek: Date[] = [];
+
+while (true) {
+	console.log(c.blue("Row:"), c.yellow(row));
+
+	if (row > worksheet.rowCount) break;
+
+	// check if all the rows are dates
+	const isDateRow = [3, 4, 5, 6, 7].every((col) => {
+		const val = isDate(worksheet.getCell(row, col).value);
+		return val;
+	});
+
+	if (isDateRow) {
+		lastWeek = [];
+
+		console.log(c.green("Date row found"));
+
+		lastWeek = [3, 4, 5, 6, 7].map((col) => {
+			const date = getDateFromValue(worksheet.getCell(row, col).value);
+
+			if (!date) throw new Error("Date not found");
+
+			return date;
+		});
+
+		console.log(c.green("Last week:"), c.yellow(lastWeek));
+	}
+
+	// check if it's a timeslot
+	const isTimeSlotRow = worksheet
+		.getCell(row, 2)
+		.value?.toString()
+		.match(config.timeSlotRegex);
+
+	if (isTimeSlotRow) {
+		console.log(c.green("Time slot row found"), c.yellow(isTimeSlotRow));
+
+		if (
+			!isTimeSlotRow[1] ||
+			!isTimeSlotRow[2] ||
+			!isTimeSlotRow[3] ||
+			!isTimeSlotRow[6]
+		)
+			throw new Error("Time slot row not found");
+
+		//  01.00 pm - 02.00 pm,01,00,pm,02,00,pm
+		const startTime = getHours(Number(isTimeSlotRow[1]), isTimeSlotRow[3]);
+		const endTime = getHours(Number(isTimeSlotRow[4]), isTimeSlotRow[6]);
+
+		console.log(
+			c.green("Start time:"),
+			c.yellow(startTime),
+			c.green("End time:"),
+			c.yellow(endTime)
+		);
+
+		if (!lastWeek.length) throw new Error("Last week not found");
+
+		const events = [3, 4, 5, 6, 7]
+			.map((col, i) => {
+				const event = worksheet.getCell(row, col).value;
+
+				if (!event) return;
+
+				return {
+					weekIndex: i,
+					event: event.toString(),
+				};
+			})
+			.filter((i) => i !== undefined);
+
+		events.forEach((event) => {
+			if (!event) return;
+
+			const date = lastWeek[event.weekIndex];
+
+			if (!date) throw new Error("Date not found");
+
+			const startDate = new Date(date);
+			startDate.setHours(startTime, 0, 0, 0);
+			const endDate = new Date(date);
+			endDate.setHours(endTime, 0, 0, 0);
+
+			console.log(
+				c.green("Start date:"),
+				c.yellow(startDate),
+				c.green("End date:"),
+				c.yellow(endDate)
+			);
+
+			weeks.push({
+				start: startDate,
+				end: endDate,
+				name: event.event,
+			});
+		});
+
+		console.log(c.green("Events:"), c.yellow(events));
+	}
+
+	row++;
+}
+
+weeks = weeks.sort((a, b) => a.start.getTime() - b.start.getTime());
+
+type Week = (typeof weeks)[number];
+
+function mergeConsecutiveWeeks(weeks: Week[]): Week[] {
+	if (weeks.length <= 1) return weeks;
+
+	const result: Week[] = [];
+	let current = weeks[0]!;
+
+	for (let i = 1; i < weeks.length; i++) {
+		const next = weeks[i]!;
+
+		// Same date AND consecutive times AND same name
+		if (
+			current.end.toDateString() === next.start.toDateString() &&
+			current.end.getTime() === next.start.getTime() &&
+			current.name === next.name
+		) {
+			current = { ...current, end: next.end };
+		} else {
+			result.push(current);
+			current = next;
+		}
+	}
+
+	result.push(current);
+	return result;
+}
+
+// merge events that are consecutive
+weeks = mergeConsecutiveWeeks(weeks);
+
+const calendar = ical({ name: MODULE_NAME, timezone: "Asia/Colombo" });
+
+weeks.forEach((week) => {
+	calendar.createEvent({
+		start: week.start,
+		end: week.end,
+		summary: week.name,
+	});
+});
+
+// writeFileSync(config.name + ".ics", calendar.toString());
+
+const octokit = new Octokit({
+	auth: process.env.TOKEN,
+});
+
+await octokit.request("PATCH /gists/{gist_id}", {
+	gist_id: config.id,
+	files: {
+		[config.name + ".ics"]: {
+			content: calendar.toString(),
+		},
+	},
+	headers: {
+		"X-GitHub-Api-Version": "2022-11-28",
+	},
+});
