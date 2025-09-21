@@ -210,7 +210,7 @@ function mergeConsecutiveWeeks(weeks: Week[]): Week[] {
 	return result;
 }
 
-// merge events that are consecutive
+// merge events that are consecutive 
 weeks = mergeConsecutiveWeeks(weeks);
 
 const calendar = ical({ name: MODULE_NAME, timezone: "Asia/Colombo" });
