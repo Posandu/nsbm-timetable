@@ -2,13 +2,17 @@ import ExcelJS, { type CellSharedFormulaValue, type CellValue } from "exceljs";
 import c from "chalk";
 import ical from "ical-generator";
 import { Octokit } from "@octokit/core";
+import { writeFileSync } from "fs";
+import { config as dotenvConfig } from "dotenv";
+
+dotenvConfig();
 
 const config = {
 	name: "25.3-degree",
-	worksheet: "25.3 Timetable",
-	timeTableStart: 25,
+	worksheet: "Plymouth 25.3 Y1S2",
+	timeTableStart: 10,
 	dataIndex: 2,
-	summaryCell: "B4",
+	summaryCell: "B3",
 	timeSlotRegex: /(\d+)\.(\d+) ([a-zA-Z]+)\s?-\s?(\d+)\.(\d+) ([a-zA-Z]+)/,
 	id: process.env.GIST_ID,
 };
@@ -53,7 +57,7 @@ if (!config.id) {
 }
 
 const timetable = await Bun.file(
-	"./downloaded/" + config.name + ".xlsx"
+	"./downloaded/" + config.name + ".xlsx",
 ).arrayBuffer();
 
 const workbook = new ExcelJS.Workbook();
@@ -130,14 +134,14 @@ while (true) {
 			c.green("Start time:"),
 			c.yellow(startTime),
 			c.green("End time:"),
-			c.yellow(endTime)
+			c.yellow(endTime),
 		);
 
 		if (!lastWeek.length) throw new Error("Last week not found");
 
 		const events = [3, 4, 5, 6, 7]
 			.map((col, i) => {
-				const event = worksheet.getCell(row, col).value;
+				const event = worksheet.getCell(row, col).text;
 
 				if (!event) return;
 
@@ -164,8 +168,13 @@ while (true) {
 				c.green("Start date:"),
 				c.yellow(startDate),
 				c.green("End date:"),
-				c.yellow(endDate)
+				c.yellow(endDate),
 			);
+
+			if (event.event.includes("ADCERT") || event.event.includes("object")) {
+				console.log(c.red("Skipping event:"), c.yellow(event.event));
+				return;
+			}
 
 			weeks.push({
 				start: startDate,
@@ -224,6 +233,7 @@ weeks.forEach((week) => {
 });
 
 // writeFileSync(config.name + ".ics", calendar.toString());
+// writeFileSync("test.json", JSON.stringify(weeks, null, 2));
 
 const octokit = new Octokit({
 	auth: process.env.TOKEN,

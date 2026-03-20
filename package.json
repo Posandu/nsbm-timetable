@@ -12,7 +12,7 @@
   "dependencies": {
     "@octokit/core": "^6.1.4",
     "chalk": "^5.4.1",
-    "dotenv": "^16.4.7",
+    "dotenv": "^17.3.1",
     "exceljs": "^4.4.0",
     "ical-generator": "^8.1.1"
   }
