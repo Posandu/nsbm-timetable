@@ -233,7 +233,6 @@ weeks.forEach((week) => {
 });
 
 // writeFileSync(config.name + ".ics", calendar.toString());
-// writeFileSync("test.json", JSON.stringify(weeks, null, 2));
 
 const octokit = new Octokit({
 	auth: process.env.TOKEN,
