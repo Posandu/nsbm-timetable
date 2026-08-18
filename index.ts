@@ -8,8 +8,9 @@ import {
 	isDate,
 	normalizeName,
 	setLkHour,
+	toIcalDate,
 } from "./utils";
-import { config } from "./config";
+import { config, LK_TZ } from "./config";
 import { Workbook } from "exceljs";
 
 dotenvConfig({ quiet: true });
@@ -203,16 +204,17 @@ for (const degree of config.degrees) {
 
 	const calendar = ical({
 		name: `${degree} Timetable`,
-		timezone: "Asia/Colombo",
+		timezone: LK_TZ,
 	});
 
 	for (const week of degreeWeeks) {
 		calendar.createEvent({
 			id: eventId(week.startDateTime, week.event),
-			start: week.startDateTime,
-			end: week.endDateTime,
+			start: toIcalDate(week.startDateTime),
+			end: toIcalDate(week.endDateTime),
+			timezone: LK_TZ,
 			summary: normalizeName(week.event),
-			stamp: week.startDateTime,
+			stamp: toIcalDate(week.startDateTime),
 		});
 	}
 

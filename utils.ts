@@ -1,7 +1,7 @@
 import type { CellSharedFormulaValue, CellValue } from "exceljs";
 import type { Cell, CellFormulaValue } from "exceljs";
 import { config, LK_TZ } from "./config";
-import { fromZonedTime } from "date-fns-tz";
+import { fromZonedTime, toZonedTime } from "date-fns-tz";
 
 export function getDateFromValue(val: CellValue): Date | undefined {
 	if (val instanceof Date) return val;
@@ -49,6 +49,11 @@ export function setLkHour(date: Date, hour: number) {
 	const wallClock = new Date(year, month, day, hour, 0, 0, 0);
 
 	return fromZonedTime(wallClock, LK_TZ);
+}
+
+/** Shift a UTC instant so ical-generator's local getters emit Asia/Colombo wall-clock time. */
+export function toIcalDate(date: Date): Date {
+	return toZonedTime(date, LK_TZ);
 }
 
 export function getRawValue(
