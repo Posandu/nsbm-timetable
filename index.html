@@ -19,14 +19,20 @@
 				--green-soft: #e8f5ec;
 				--green-ink: #1a5c32;
 				--shadow: 0 10px 30px rgba(28, 42, 34, 0.06);
+				--pad: clamp(0.75rem, 4vw, 1rem);
 			}
 
 			* {
 				box-sizing: border-box;
 			}
 
+			html {
+				-webkit-text-size-adjust: 100%;
+			}
+
 			body {
 				margin: 0;
+				overflow-x: hidden;
 				color: var(--ink);
 				background:
 					radial-gradient(circle at top left, #e8f5ec 0, transparent 42%),
@@ -36,9 +42,9 @@
 			}
 
 			main {
-				width: min(680px, calc(100% - 2rem));
+				width: min(680px, calc(100% - 2 * var(--pad)));
 				margin: 0 auto;
-				padding: 2.75rem 0 4rem;
+				padding: clamp(1.5rem, 6vw, 2.75rem) 0 clamp(2.5rem, 8vw, 4rem);
 			}
 
 			header {
@@ -47,7 +53,7 @@
 
 			h1 {
 				margin: 0 0 0.4rem;
-				font-size: 2rem;
+				font-size: clamp(1.4rem, 5vw, 2rem);
 				letter-spacing: -0.03em;
 			}
 
@@ -70,18 +76,23 @@
 			}
 
 			select {
+				appearance: none;
 				width: 100%;
-				padding: 0.8rem 0.95rem;
+				min-height: 2.75rem;
+				padding: 0.8rem 2.4rem 0.8rem 0.95rem;
 				border: 1px solid var(--line);
 				border-radius: 12px;
-				background: var(--card);
+				background:
+					var(--card)
+					url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231c2a22' d='M1.4 0 6 4.6 10.6 0 12 1.4 6 7.4 0 1.4z'/%3E%3C/svg%3E")
+					no-repeat right 0.95rem center;
 				color: var(--ink);
 				font: inherit;
 			}
 
 			.card {
 				margin-top: 1.1rem;
-				padding: 1.25rem 1.3rem 1.35rem;
+				padding: clamp(1rem, 3.5vw, 1.3rem) clamp(1rem, 3.5vw, 1.3rem) 1.35rem;
 				border: 1px solid var(--line);
 				border-radius: 18px;
 				background: var(--card);
@@ -90,7 +101,8 @@
 
 			h2 {
 				margin: 0;
-				font-size: 1.15rem;
+				font-size: clamp(1.05rem, 3.2vw, 1.15rem);
+				overflow-wrap: anywhere;
 			}
 
 			.modules {
@@ -102,6 +114,7 @@
 
 			.modules li {
 				margin-left: 1.1rem;
+				overflow-wrap: anywhere;
 			}
 
 			.howto h2 {
@@ -117,7 +130,7 @@
 
 			.steps li {
 				display: grid;
-				grid-template-columns: auto 1fr;
+				grid-template-columns: auto minmax(0, 1fr);
 				gap: 0.85rem;
 				padding: 0.95rem 0;
 			}
@@ -147,6 +160,7 @@
 			.steps a {
 				color: var(--green-ink);
 				font-weight: 650;
+				overflow-wrap: anywhere;
 			}
 
 			.title {
@@ -166,19 +180,20 @@
 
 			.url {
 				flex: 1 1 14rem;
+				min-width: 0;
 				margin: 0;
 				padding: 0.7rem 0.8rem;
-				overflow-x: auto;
+				overflow-wrap: anywhere;
 				border-radius: 10px;
 				background: var(--paper);
 				font-family: ui-monospace, "Cascadia Code", monospace;
-				font-size: 0.82rem;
-				word-break: break-all;
+				font-size: clamp(0.72rem, 2.4vw, 0.82rem);
 			}
 
 			button {
 				appearance: none;
 				flex: 0 0 auto;
+				min-height: 2.75rem;
 				padding: 0.55rem 0.9rem;
 				border: 0;
 				border-radius: 999px;
@@ -193,6 +208,8 @@
 			.shot {
 				display: block;
 				width: 100%;
+				height: auto;
+				max-width: 100%;
 				margin-top: 0.55rem;
 				border: 1px solid var(--line);
 				border-radius: 12px;
@@ -202,6 +219,22 @@
 				width: min(100%, 280px);
 			}
 
+			@media (max-width: 540px) {
+				.steps li {
+					gap: 0.6rem;
+					padding: 0.8rem 0;
+				}
+
+				.url-row {
+					flex-direction: column;
+				}
+
+				.url,
+				button {
+					width: 100%;
+					flex: none;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -283,9 +316,10 @@
 			const copyBtn = document.getElementById("copy");
 
 			let config;
+			const cacheBust = Math.random().toString(36).slice(2);
 
 			function calendarUrl(id) {
-				return `${config.baseUrl}/ics/${id}.ics`;
+				return `${config.baseUrl}/ics/${id}.ics?${cacheBust}`;
 			}
 
 			function calendarTitle(id) {
@@ -333,11 +367,15 @@
 
 			select.addEventListener("change", render);
 			copyBtn.addEventListener("click", async () => {
-				await navigator.clipboard.writeText(calendarUrl(select.value));
+				await navigator.clipboard.writeText(urlEl.textContent);
 				copyBtn.textContent = "Copied";
 			});
 
-			const response = await fetch("./config.json");
+			for (const img of document.querySelectorAll("img[src]")) {
+				img.src = `${img.getAttribute("src")}?${cacheBust}`;
+			}
+
+			const response = await fetch(`./config.json?${cacheBust}`);
 			if (!response.ok) throw new Error("Failed to load config.json");
 			config = await response.json();
 
