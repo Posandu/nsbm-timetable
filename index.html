@@ -56,6 +56,12 @@
 				color: var(--muted);
 			}
 
+			.meta {
+				margin: 0.4rem 0 0;
+				color: var(--muted);
+				font-size: 0.9rem;
+			}
+
 			label {
 				display: block;
 				margin-bottom: 0.4rem;
@@ -186,10 +192,14 @@
 
 			.shot {
 				display: block;
-				width: min(100%, 280px);
-				margin-top: 0.15rem;
+				width: 100%;
+				margin-top: 0.55rem;
 				border: 1px solid var(--line);
 				border-radius: 12px;
+			}
+
+			.shot.narrow {
+				width: min(100%, 280px);
 			}
 
 		</style>
@@ -199,8 +209,9 @@
 			<header>
 				<h1>NSBM Timetable</h1>
 				<p class="lede">
-					Pick your degree, then add it to Google Calendar. 
+					Pick your degree, then add it to Google Calendar.
 				</p>
+				<p class="meta" id="updated"></p>
 			</header>
 
 			<label for="degree">Degree</label>
@@ -228,6 +239,11 @@
 								<code class="url" id="url"></code>
 								<button type="button" id="copy">Copy URL</button>
 							</div>
+							<img
+								class="shot"
+								src="./add-by-url.png"
+								alt="Google Calendar Settings, Add calendar From URL, with the URL of calendar field"
+							/>
 						</div>
 					</li>
 					<li>
@@ -247,7 +263,7 @@
 						<div>
 							<p>Select the newly added calendar in Google Calendar.</p>
 							<img
-								class="shot"
+								class="shot narrow"
 								src="./image.png"
 								alt="Google Calendar sidebar with Other calendars, including the new timetable calendar ticked"
 							/>
@@ -263,6 +279,7 @@
 			const modulesEl = document.getElementById("modules");
 			const urlEl = document.getElementById("url");
 			const titleEl = document.getElementById("cal-title");
+			const updatedEl = document.getElementById("updated");
 			const copyBtn = document.getElementById("copy");
 
 			let config;
@@ -277,6 +294,23 @@
 
 			function degreeName(id) {
 				return config.degreeNames?.[id] ?? id;
+			}
+
+			function formatUpdated(iso) {
+				const then = new Date(iso);
+				if (Number.isNaN(then.getTime())) return "";
+
+				const seconds = Math.round((Date.now() - then.getTime()) / 1000);
+				const minutes = Math.round(seconds / 60);
+				const hours = Math.round(minutes / 60);
+				const days = Math.round(hours / 24);
+
+				let relative = "just now";
+				if (minutes >= 1 && minutes < 60) relative = `${minutes} minute${minutes === 1 ? "" : "s"} ago`;
+				else if (hours >= 1 && hours < 24) relative = `${hours} hour${hours === 1 ? "" : "s"} ago`;
+				else if (days >= 1) relative = `${days} day${days === 1 ? "" : "s"} ago`;
+
+				return `Last time the timetable changed ${relative}`;
 			}
 
 			function render() {
@@ -317,6 +351,7 @@
 			const params = new URLSearchParams(location.search);
 			const preset = params.get("degree")?.toUpperCase();
 			if (preset && config.degreeModules[preset]) select.value = preset;
+			if (config.lastUpdated) updatedEl.textContent = formatUpdated(config.lastUpdated);
 			render();
 		</script>
 	</body>

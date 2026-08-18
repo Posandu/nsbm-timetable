@@ -180,20 +180,11 @@ function eventBelongsToDegree(event: string, modules: readonly string[]) {
 
 await mkdir("ics", { recursive: true });
 
-await Bun.write(
-	"config.json",
-	JSON.stringify(
-		{
-			baseUrl: config.baseUrl,
-			modules: config.modules,
-			degrees: config.degrees,
-			degreeNames: config.degreeNames,
-			degreeModules: config.degreeModules,
-		},
-		null,
-		2,
-	) + "\n",
-);
+const previousConfig = (await Bun.file("config.json").exists())
+	? await Bun.file("config.json").json()
+	: {};
+
+let timetableChanged = false;
 
 for (const degree of config.degrees) {
 	const modules =
@@ -220,10 +211,41 @@ for (const degree of config.degrees) {
 	}
 
 	const path = `ics/${degree}.ics`;
-	await Bun.write(path, calendar.toString());
+	const ics = calendar.toString();
+	const existing = (await Bun.file(path).exists())
+		? await Bun.file(path).text()
+		: null;
+
+	if (existing !== ics) timetableChanged = true;
+
+	await Bun.write(path, ics);
 	console.log(
 		c.green("Wrote"),
 		c.yellow(path),
 		c.green(`(${degreeWeeks.length} events)`),
 	);
 }
+
+const lastUpdated =
+	timetableChanged || !previousConfig.lastUpdated
+		? new Date().toISOString()
+		: previousConfig.lastUpdated;
+
+if (timetableChanged) console.log(c.green("Timetable changed"));
+else console.log(c.yellow("Timetable unchanged"));
+
+await Bun.write(
+	"config.json",
+	JSON.stringify(
+		{
+			baseUrl: config.baseUrl,
+			lastUpdated,
+			modules: config.modules,
+			degrees: config.degrees,
+			degreeNames: config.degreeNames,
+			degreeModules: config.degreeModules,
+		},
+		null,
+		2,
+	) + "\n",
+);
