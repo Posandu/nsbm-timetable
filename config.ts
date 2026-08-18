@@ -1,6 +1,7 @@
 export const LK_TZ = "Asia/Colombo";
 
 export const config = {
+	baseUrl: "https://cal.posandu.com",
 	fileNameWithExt: "25.3_y2_sem1.xlsx",
 	worksheetName: "25.2 & 25.3 PLY Y2S1",
 	summaryCell: "B2",
@@ -19,6 +20,15 @@ export const config = {
 		PUSL2102: "Business Analytics and Digital Decision Making",
 	},
 	degrees: ["SE", "CS", "CN", "SEC", "TM", "DS", "AI"],
+	degreeNames: {
+		SE: "Software Engineering",
+		CS: "Computer Science",
+		CN: "Computer Networks",
+		SEC: "Computer Security",
+		TM: "Technology Management",
+		DS: "Data Science",
+		AI: "Artificial Intelligence",
+	},
 	degreeModules: {
 		SE: ["PUSL2019", "PUSL2107", "PUSL2106", "PUSL2109"],
 		CS: ["PUSL2019", "PUSL2107", "PUSL2106", "PUSL2018"],

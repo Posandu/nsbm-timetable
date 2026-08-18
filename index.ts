@@ -180,6 +180,21 @@ function eventBelongsToDegree(event: string, modules: readonly string[]) {
 
 await mkdir("ics", { recursive: true });
 
+await Bun.write(
+	"config.json",
+	JSON.stringify(
+		{
+			baseUrl: config.baseUrl,
+			modules: config.modules,
+			degrees: config.degrees,
+			degreeNames: config.degreeNames,
+			degreeModules: config.degreeModules,
+		},
+		null,
+		2,
+	) + "\n",
+);
+
 for (const degree of config.degrees) {
 	const modules =
 		config.degreeModules[degree as keyof typeof config.degreeModules];

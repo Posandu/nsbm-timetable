@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>NSBM Timetable</title>
+		<meta
+			name="description"
+			content="Add your NSBM degree timetable to Google Calendar. Calendar updates every hour."
+		/>
+		<style>
+			:root {
+				--ink: #1c2a22;
+				--muted: #5c6d63;
+				--paper: #f3f7f3;
+				--card: #ffffff;
+				--line: #d7e3d8;
+				--green: #2f8a4e;
+				--green-soft: #e8f5ec;
+				--green-ink: #1a5c32;
+				--shadow: 0 10px 30px rgba(28, 42, 34, 0.06);
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				color: var(--ink);
+				background:
+					radial-gradient(circle at top left, #e8f5ec 0, transparent 42%),
+					var(--paper);
+				font-family: "Segoe UI", system-ui, sans-serif;
+				line-height: 1.55;
+			}
+
+			main {
+				width: min(680px, calc(100% - 2rem));
+				margin: 0 auto;
+				padding: 2.75rem 0 4rem;
+			}
+
+			header {
+				margin-bottom: 1.75rem;
+			}
+
+			h1 {
+				margin: 0 0 0.4rem;
+				font-size: 2rem;
+				letter-spacing: -0.03em;
+			}
+
+			.lede {
+				margin: 0;
+				color: var(--muted);
+			}
+
+			label {
+				display: block;
+				margin-bottom: 0.4rem;
+				font-size: 0.85rem;
+				font-weight: 650;
+			}
+
+			select {
+				width: 100%;
+				padding: 0.8rem 0.95rem;
+				border: 1px solid var(--line);
+				border-radius: 12px;
+				background: var(--card);
+				color: var(--ink);
+				font: inherit;
+			}
+
+			.card {
+				margin-top: 1.1rem;
+				padding: 1.25rem 1.3rem 1.35rem;
+				border: 1px solid var(--line);
+				border-radius: 18px;
+				background: var(--card);
+				box-shadow: var(--shadow);
+			}
+
+			h2 {
+				margin: 0;
+				font-size: 1.15rem;
+			}
+
+			.modules {
+				margin: 0.7rem 0 0;
+				padding: 0;
+				color: var(--muted);
+				font-size: 0.92rem;
+			}
+
+			.modules li {
+				margin-left: 1.1rem;
+			}
+
+			.howto h2 {
+				margin-bottom: 0.85rem;
+			}
+
+			ol.steps {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				counter-reset: step;
+			}
+
+			.steps li {
+				display: grid;
+				grid-template-columns: auto 1fr;
+				gap: 0.85rem;
+				padding: 0.95rem 0;
+			}
+
+			.steps li + li {
+				border-top: 1px solid var(--line);
+			}
+
+			.steps li::before {
+				counter-increment: step;
+				content: counter(step);
+				width: 1.7rem;
+				height: 1.7rem;
+				border-radius: 999px;
+				background: var(--green-soft);
+				color: var(--green-ink);
+				font-size: 0.85rem;
+				font-weight: 700;
+				line-height: 1.7rem;
+				text-align: center;
+			}
+
+			.steps p {
+				margin: 0 0 0.7rem;
+			}
+
+			.steps a {
+				color: var(--green-ink);
+				font-weight: 650;
+			}
+
+			.title {
+				display: inline;
+				padding: 0.08rem 0.4rem;
+				border-radius: 6px;
+				background: var(--green-soft);
+				font-weight: 650;
+			}
+
+			.url-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				align-items: stretch;
+			}
+
+			.url {
+				flex: 1 1 14rem;
+				margin: 0;
+				padding: 0.7rem 0.8rem;
+				overflow-x: auto;
+				border-radius: 10px;
+				background: var(--paper);
+				font-family: ui-monospace, "Cascadia Code", monospace;
+				font-size: 0.82rem;
+				word-break: break-all;
+			}
+
+			button {
+				appearance: none;
+				flex: 0 0 auto;
+				padding: 0.55rem 0.9rem;
+				border: 0;
+				border-radius: 999px;
+				background: var(--green);
+				color: #fff;
+				font: inherit;
+				font-size: 0.9rem;
+				font-weight: 650;
+				cursor: pointer;
+			}
+
+			.shot {
+				display: block;
+				width: min(100%, 280px);
+				margin-top: 0.15rem;
+				border: 1px solid var(--line);
+				border-radius: 12px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>NSBM Timetable</h1>
+				<p class="lede">
+					Pick your degree, then add it to Google Calendar. 
+				</p>
+			</header>
+
+			<label for="degree">Degree</label>
+			<select id="degree"></select>
+
+			<section class="card">
+				<h2 id="degree-name"></h2>
+				<ul class="modules" id="modules"></ul>
+			</section>
+
+			<section class="card howto">
+				<h2>Add to Google Calendar</h2>
+				<ol class="steps">
+					<li>
+						<div>
+							<p>
+								Add this URL at
+								<a
+									href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl"
+									target="_blank"
+									rel="noreferrer"
+									>calendar.google.com/calendar/u/0/r/settings/addbyurl</a>:
+							</p>
+							<div class="url-row">
+								<code class="url" id="url"></code>
+								<button type="button" id="copy">Copy URL</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>
+								Open
+								<a
+									href="https://calendar.google.com/calendar/u/0/syncselect"
+									target="_blank"
+									rel="noreferrer"
+									>calendar.google.com/calendar/u/0/syncselect</a>,
+								select "<span class="title" id="cal-title"></span>" and save.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>Select the newly added calendar in Google Calendar.</p>
+							<img
+								class="shot"
+								src="./image.png"
+								alt="Google Calendar sidebar with Other calendars, including the new timetable calendar ticked"
+							/>
+						</div>
+					</li>
+				</ol>
+			</section>
+		</main>
+
+		<script type="module">
+			const select = document.getElementById("degree");
+			const nameEl = document.getElementById("degree-name");
+			const modulesEl = document.getElementById("modules");
+			const urlEl = document.getElementById("url");
+			const titleEl = document.getElementById("cal-title");
+			const copyBtn = document.getElementById("copy");
+
+			let config;
+
+			function calendarUrl(id) {
+				return `${config.baseUrl}/ics/${id}.ics`;
+			}
+
+			function calendarTitle(id) {
+				return `${id} Timetable (Read Only)`;
+			}
+
+			function degreeName(id) {
+				return config.degreeNames?.[id] ?? id;
+			}
+
+			function render() {
+				const id = select.value;
+				const url = calendarUrl(id);
+				const modules = config.degreeModules[id] ?? [];
+
+				nameEl.textContent = `${id} · ${degreeName(id)}`;
+				titleEl.textContent = calendarTitle(id);
+				modulesEl.replaceChildren(
+					...modules.map((code) => {
+						const item = document.createElement("li");
+						item.textContent = `${code} · ${(config.modules[code] ?? code).trim()}`;
+						return item;
+					}),
+				);
+				urlEl.textContent = url;
+				copyBtn.textContent = "Copy URL";
+			}
+
+			select.addEventListener("change", render);
+			copyBtn.addEventListener("click", async () => {
+				await navigator.clipboard.writeText(calendarUrl(select.value));
+				copyBtn.textContent = "Copied";
+			});
+
+			const response = await fetch("./config.json");
+			if (!response.ok) throw new Error("Failed to load config.json");
+			config = await response.json();
+
+			for (const id of config.degrees) {
+				const option = document.createElement("option");
+				option.value = id;
+				option.textContent = `${id} · ${degreeName(id)}`;
+				select.append(option);
+			}
+
+			const params = new URLSearchParams(location.search);
+			const preset = params.get("degree")?.toUpperCase();
+			if (preset && config.degreeModules[preset]) select.value = preset;
+			render();
+		</script>
+	</body>
+</html>
