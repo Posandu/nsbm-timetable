@@ -2,7 +2,13 @@ import c from "chalk";
 import ical from "ical-generator";
 import { config as dotenvConfig } from "dotenv";
 import { mkdir } from "node:fs/promises";
-import { getDateFromValue, getRawValue, isDate, setLkHour } from "./utils";
+import {
+	getDateFromValue,
+	getRawValue,
+	isDate,
+	normalizeName,
+	setLkHour,
+} from "./utils";
 import { config } from "./config";
 import { Workbook } from "exceljs";
 
@@ -205,7 +211,7 @@ for (const degree of config.degrees) {
 			id: eventId(week.startDateTime, week.event),
 			start: week.startDateTime,
 			end: week.endDateTime,
-			summary: week.event,
+			summary: normalizeName(week.event),
 			stamp: week.startDateTime,
 		});
 	}
