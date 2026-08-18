@@ -1,134 +1,80 @@
-import ExcelJS, { type CellSharedFormulaValue, type CellValue } from "exceljs";
 import c from "chalk";
 import ical from "ical-generator";
-import { Octokit } from "@octokit/core";
-import { writeFileSync } from "fs";
 import { config as dotenvConfig } from "dotenv";
+import { getDateFromValue, getRawValue, isDate, setLkHour } from "./utils";
+import { config } from "./config";
+import { Workbook } from "exceljs";
 
-dotenvConfig();
+dotenvConfig({ quiet: true });
 
-const config = {
-	name: "25.3-degree",
-	worksheet: "Plymouth 25.3 Y1S2",
-	timeTableStart: 10,
-	dataIndex: 2,
-	summaryCell: "B3",
-	timeSlotRegex: /(\d+)\.(\d+) ([a-zA-Z]+)\s?-\s?(\d+)\.(\d+) ([a-zA-Z]+)/,
-	id: process.env.GIST_ID,
-};
-
-console.log(c.bgBlue.black("NSBM Timetable Converter"));
-console.log(c.green("Found"), c.yellow(config.name));
-
-console.log();
-
-function getDateFromValue(val: CellValue): Date | undefined {
-	if (val instanceof Date) return val;
-	if (typeof val === "object" && val !== null) {
-		if ((val as CellSharedFormulaValue)["result"] instanceof Date) {
-			return (val as CellSharedFormulaValue)["result"] as Date;
-		}
-	}
-	return undefined;
+type LastWeek = [Date, Date, Date, Date, Date] | undefined;
+interface WeekData {
+	startDateTime: Date;
+	endDateTime: Date;
+	event: string;
 }
 
-function isDate(val: CellValue): val is Date {
-	return getDateFromValue(val) !== undefined;
-}
+console.log(c.blue("Script made by @posandu"));
 
-function getHours(hours: number, sign: string) {
-	sign = sign.trim().toUpperCase();
-
-	if (sign === "PM") {
-		if (hours < 12) return hours + 12;
-		return hours;
-	} else {
-		if (hours === 12) return 0;
-		return hours;
-	}
-}
-
-console.log(c.blue("File:"), c.yellow(config.name));
-
-if (!config.id) {
-	console.log(c.red("Gist ID not found"));
-
-	process.exit(1);
-}
-
-const timetable = await Bun.file(
-	"./downloaded/" + config.name + ".xlsx",
+const fileData = await Bun.file(
+	"./downloaded/" + config.fileNameWithExt,
 ).arrayBuffer();
 
-const workbook = new ExcelJS.Workbook();
-await workbook.xlsx.load(timetable);
+const workbook = new Workbook();
+await workbook.xlsx.load(fileData);
 
-const worksheet = workbook.getWorksheet(config.worksheet);
-
+const worksheet = workbook.getWorksheet(config.worksheetName);
 if (!worksheet) throw new Error("Worksheet not found");
 
 const MODULE_NAME = worksheet
 	.getCell(config.summaryCell)
-	.text.replace("Time Table - ", "")
+	.text.replace("\n", "")
 	.trim();
 
-console.log(c.blue("Module:"), c.yellow(MODULE_NAME));
+console.log(c.yellow(MODULE_NAME));
 
-let weeks: {
-	start: Date;
-	end: Date;
-	name: string;
-}[] = [];
-let row = config.timeTableStart;
-let lastWeek: Date[] = [];
+/**
+ *
+ *
+ */
+
+let weeks: WeekData[] = [];
+let lastWeek: LastWeek;
+let rowIndex = config.dataStartIndex;
 
 while (true) {
-	console.log(c.blue("Row:"), c.yellow(row));
+	if (rowIndex > worksheet.rowCount) break;
 
-	if (row > worksheet.rowCount) break;
-
-	// check if all the rows are dates
-	const isDateRow = [3, 4, 5, 6, 7].every((col) => {
-		const val = isDate(worksheet.getCell(row, col).value);
+	const isDateRow = config.weekDaysArr.every((col) => {
+		const val = isDate(worksheet.getCell(rowIndex, col).value);
 		return val;
 	});
 
 	if (isDateRow) {
-		lastWeek = [];
+		lastWeek = undefined;
 
 		console.log(c.green("Date row found"));
 
-		lastWeek = [3, 4, 5, 6, 7].map((col) => {
-			const date = getDateFromValue(worksheet.getCell(row, col).value);
+		lastWeek = config.weekDaysArr.map((col) => {
+			const date = getDateFromValue(worksheet.getCell(rowIndex, col).value);
 
 			if (!date) throw new Error("Date not found");
 
 			return date;
-		});
-
-		console.log(c.green("Last week:"), c.yellow(lastWeek));
+		}) as LastWeek;
 	}
 
-	// check if it's a timeslot
-	const isTimeSlotRow = worksheet
-		.getCell(row, 2)
-		.value?.toString()
-		.match(config.timeSlotRegex);
+	/**
+	 * current way to check for the time is to check whether the 1st time and 2nd slot are dates
+	 */
+	const firstTimeSlot = getDateFromValue(worksheet.getCell(rowIndex, 2).value);
+	const secondTimeSlot = getDateFromValue(worksheet.getCell(rowIndex, 3).value);
 
-	if (isTimeSlotRow) {
-		console.log(c.green("Time slot row found"), c.yellow(isTimeSlotRow));
+	if (typeof firstTimeSlot === "object" && typeof secondTimeSlot === "object") {
+		console.log(c.green("Time slot row found"), c.yellow(rowIndex));
 
-		if (
-			!isTimeSlotRow[1] ||
-			!isTimeSlotRow[2] ||
-			!isTimeSlotRow[3] ||
-			!isTimeSlotRow[6]
-		)
-			throw new Error("Time slot row not found");
-
-		//  01.00 pm - 02.00 pm,01,00,pm,02,00,pm
-		const startTime = getHours(Number(isTimeSlotRow[1]), isTimeSlotRow[3]);
-		const endTime = getHours(Number(isTimeSlotRow[4]), isTimeSlotRow[6]);
+		const startTime = firstTimeSlot.getUTCHours();
+		const endTime = secondTimeSlot.getUTCHours();
 
 		console.log(
 			c.green("Start time:"),
@@ -137,32 +83,32 @@ while (true) {
 			c.yellow(endTime),
 		);
 
-		if (!lastWeek.length) throw new Error("Last week not found");
+		if (!lastWeek) throw new Error("Last week not found");
 
-		const events = [3, 4, 5, 6, 7]
+		const events = config.weekDaysArr
 			.map((col, i) => {
-				const event = worksheet.getCell(row, col).text;
+				const event = worksheet.getCell(rowIndex, col);
 
 				if (!event) return;
 
 				return {
-					weekIndex: i,
-					event: event.toString(),
+					week: i,
+					event: getRawValue(event),
 				};
 			})
-			.filter((i) => i !== undefined);
+			.filter((i) => i !== undefined && i.event !== null);
 
 		events.forEach((event) => {
 			if (!event) return;
+			if (typeof event.event !== "string")
+				throw Error("PARSING ERROR - WRONG TYPE - Got " + event.event);
 
-			const date = lastWeek[event.weekIndex];
+			const date = lastWeek![event.week];
 
 			if (!date) throw new Error("Date not found");
 
-			const startDate = new Date(date);
-			startDate.setHours(startTime, 0, 0, 0);
-			const endDate = new Date(date);
-			endDate.setHours(endTime, 0, 0, 0);
+			const startDate = setLkHour(date, startTime);
+			const endDate = setLkHour(date, endTime);
 
 			console.log(
 				c.green("Start date:"),
@@ -171,25 +117,20 @@ while (true) {
 				c.yellow(endDate),
 			);
 
-			if (event.event.includes("ADCERT") || event.event.includes("object")) {
-				console.log(c.red("Skipping event:"), c.yellow(event.event));
-				return;
-			}
-
 			weeks.push({
-				start: startDate,
-				end: endDate,
-				name: event.event,
+				startDateTime: startDate,
+				endDateTime: endDate,
+				event: event.event,
 			});
 		});
-
-		console.log(c.green("Events:"), c.yellow(events));
 	}
 
-	row++;
+	rowIndex++;
 }
 
-weeks = weeks.sort((a, b) => a.start.getTime() - b.start.getTime());
+weeks = weeks.sort(
+	(a, b) => a.startDateTime.getTime() - b.startDateTime.getTime(),
+);
 
 type Week = (typeof weeks)[number];
 
@@ -202,13 +143,13 @@ function mergeConsecutiveWeeks(weeks: Week[]): Week[] {
 	for (let i = 1; i < weeks.length; i++) {
 		const next = weeks[i]!;
 
-		// Same date AND consecutive times AND same name
 		if (
-			current.end.toDateString() === next.start.toDateString() &&
-			current.end.getTime() === next.start.getTime() &&
-			current.name === next.name
+			current.endDateTime.toDateString() ===
+				next.startDateTime.toDateString() &&
+			current.endDateTime.getTime() === next.startDateTime.getTime() &&
+			current.event === next.event
 		) {
-			current = { ...current, end: next.end };
+			current = { ...current, endDateTime: next.endDateTime };
 		} else {
 			result.push(current);
 			current = next;
@@ -226,26 +167,10 @@ const calendar = ical({ name: MODULE_NAME, timezone: "Asia/Colombo" });
 
 weeks.forEach((week) => {
 	calendar.createEvent({
-		start: week.start,
-		end: week.end,
-		summary: week.name,
+		start: week.startDateTime,
+		end: week.endDateTime,
+		summary: week.event,
 	});
 });
 
-// writeFileSync(config.name + ".ics", calendar.toString());
-
-const octokit = new Octokit({
-	auth: process.env.TOKEN,
-});
-
-await octokit.request("PATCH /gists/{gist_id}", {
-	gist_id: config.id,
-	files: {
-		[config.name + ".ics"]: {
-			content: calendar.toString(),
-		},
-	},
-	headers: {
-		"X-GitHub-Api-Version": "2022-11-28",
-	},
-});
+Bun.write(config.fileNameWithExt + ".ics", calendar.toString());

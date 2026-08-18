@@ -5,4 +5,4 @@ fi
 
 mkdir -p ./downloaded
 
-wget -qO ./downloaded/25.3-degree.xlsx "$CAL_LINK"
+wget -qO ./downloaded/25.3_y2_sem1.xlsx "$CAL_LINK"
