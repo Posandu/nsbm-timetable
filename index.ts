@@ -1,6 +1,7 @@
 import c from "chalk";
 import ical from "ical-generator";
 import { config as dotenvConfig } from "dotenv";
+import { mkdir } from "node:fs/promises";
 import { getDateFromValue, getRawValue, isDate, setLkHour } from "./utils";
 import { config } from "./config";
 import { Workbook } from "exceljs";
@@ -160,17 +161,54 @@ function mergeConsecutiveWeeks(weeks: Week[]): Week[] {
 	return result;
 }
 
-// merge events that are consecutive
 weeks = mergeConsecutiveWeeks(weeks);
 
-const calendar = ical({ name: MODULE_NAME, timezone: "Asia/Colombo" });
+function eventId(start: Date, summary: string) {
+	const digest = new Bun.CryptoHasher("sha1")
+		.update(`${start.toISOString()}|${summary}`)
+		.digest("hex");
+	return `${digest}@nsbm-timetable`;
+}
 
-weeks.forEach((week) => {
-	calendar.createEvent({
-		start: week.startDateTime,
-		end: week.endDateTime,
-		summary: week.event,
+function eventBelongsToDegree(event: string, modules: readonly string[]) {
+	const mentionsKnownModule = Object.keys(config.modules).some((code) =>
+		event.includes(code),
+	);
+	if (!mentionsKnownModule) return true;
+	return modules.some((code) => event.includes(code));
+}
+
+await mkdir("ics", { recursive: true });
+
+for (const degree of config.degrees) {
+	const modules =
+		config.degreeModules[degree as keyof typeof config.degreeModules];
+	if (!modules) throw new Error(`No modules configured for ${degree}`);
+
+	const degreeWeeks = weeks.filter((week) =>
+		eventBelongsToDegree(week.event, modules),
+	);
+
+	const calendar = ical({
+		name: `${degree} Timetable`,
+		timezone: "Asia/Colombo",
 	});
-});
 
-Bun.write(config.fileNameWithExt + ".ics", calendar.toString());
+	for (const week of degreeWeeks) {
+		calendar.createEvent({
+			id: eventId(week.startDateTime, week.event),
+			start: week.startDateTime,
+			end: week.endDateTime,
+			summary: week.event,
+			stamp: week.startDateTime,
+		});
+	}
+
+	const path = `ics/${degree}.ics`;
+	await Bun.write(path, calendar.toString());
+	console.log(
+		c.green("Wrote"),
+		c.yellow(path),
+		c.green(`(${degreeWeeks.length} events)`),
+	);
+}

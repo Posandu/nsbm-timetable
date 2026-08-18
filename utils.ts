@@ -1,11 +1,5 @@
 import type { CellSharedFormulaValue, CellValue } from "exceljs";
-import type {
-	Cell,
-	CellErrorValue,
-	CellRichTextValue,
-	CellHyperlinkValue,
-	CellFormulaValue,
-} from "exceljs";
+import type { Cell, CellFormulaValue } from "exceljs";
 import { config, LK_TZ } from "./config";
 import { fromZonedTime } from "date-fns-tz";
 

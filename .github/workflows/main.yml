@@ -2,6 +2,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "ics/**"
   schedule:
     - cron: "0 * * * *"
 
@@ -26,6 +28,15 @@ jobs:
         run: bash ./scripts/download.sh
 
       - run: bun run index.ts
-        env:
-          TOKEN: ${{ secrets.TOKEN }}
-          GIST_ID: ${{ secrets.GIST_ID }}
+
+      - name: Commit calendars
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ics
+          if git diff --staged --quiet; then
+            echo "No calendar changes"
+          else
+            git commit -m "Update degree calendars"
+            git push
+          fi

@@ -6,7 +6,6 @@ export const config = {
 	summaryCell: "B2",
 	dataStartIndex: 17,
 	weekDaysArr: [4, 5, 6, 7, 8],
-	timeSlotRegex: /f/,
 	modules: {
 		PUSL2019: "Informational Management and Retreieval",
 		PUSL2107: "Applied Group Project in Emerging Technologies",
