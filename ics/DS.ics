@@ -284,14 +284,6 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:f8cc024c9f908527202907893f270c48e88687e0@nsbm-timetable
-SEQUENCE:0
-DTSTAMP:20261112T090000
-DTSTART;TZID=Asia/Colombo:20261112T090000
-DTEND;TZID=Asia/Colombo:20261112T110000
-SUMMARY:Applied Group Project in Emerging Technologies
-END:VEVENT
-BEGIN:VEVENT
 UID:07b563ad5c6c4d3579d45d8716699148781f72bc@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261113T090000
