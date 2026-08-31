@@ -151,12 +151,12 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:c8c12319e075917c446931682ac04bde1f5fc3f1@nsbm-timetable
+UID:303e5afe37c1566acac0ec0da3a2a90971690100@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261008T130000
 DTSTART;TZID=Asia/Colombo:20261008T130000
-DTEND;TZID=Asia/Colombo:20261008T150000
-SUMMARY:Informational Management and Retreieval
+DTEND;TZID=Asia/Colombo:20261008T160000
+SUMMARY:Informational Management and Retreieval(1-3)/ PUSL2104(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:a9030863f6ec6154d39b70d0effbbdd38a2618b4@nsbm-timetable
@@ -176,12 +176,12 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:ecb5dcb0ea8e35c6525add8456c2fb7ab5758a46@nsbm-timetable
+UID:49c5563e33f86c28a4d6dfd085f9ae6d1c35aa62@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261015T130000
 DTSTART;TZID=Asia/Colombo:20261015T130000
-DTEND;TZID=Asia/Colombo:20261015T150000
-SUMMARY:Informational Management and Retreieval
+DTEND;TZID=Asia/Colombo:20261015T160000
+SUMMARY:Informational Management and Retreieval(1-3)/ PUSL2104(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:f3455a29cdf19dbcb1a6c92a2128878a1bf039e2@nsbm-timetable
@@ -201,12 +201,12 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:5611733f0742a42a614e4995c06a062ae7dfd505@nsbm-timetable
+UID:62f63f1f7a737eea9946b5a9076f677a4a29f4ce@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261022T130000
 DTSTART;TZID=Asia/Colombo:20261022T130000
 DTEND;TZID=Asia/Colombo:20261022T170000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval/ PUSL2104(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:8b53deee61ab0207c1b62ac043a3e037afa751d6@nsbm-timetable
@@ -226,12 +226,12 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:241b6e4f0e1a5ac23fc6149b10219b093806bcf1@nsbm-timetable
+UID:9b74f3b9600a5d38ce979ee4036b6c14886e41d6@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261029T130000
 DTSTART;TZID=Asia/Colombo:20261029T130000
 DTEND;TZID=Asia/Colombo:20261029T170000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval/ PUSL2104(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:df28bfaea4b7df199b175b6407c886063815da44@nsbm-timetable
@@ -259,12 +259,12 @@ DTEND;TZID=Asia/Colombo:20261105T110000
 SUMMARY:Applied Group Project in Emerging Technologies
 END:VEVENT
 BEGIN:VEVENT
-UID:e8a5d879a0b685683501546a4e9fc7f0fccdc99c@nsbm-timetable
+UID:441a1a91cc91df310a063a452d7fc277debdad2e@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261106T090000
 DTSTART;TZID=Asia/Colombo:20261106T090000
-DTEND;TZID=Asia/Colombo:20261106T110000
-SUMMARY:Informational Management and Retreieval
+DTEND;TZID=Asia/Colombo:20261106T120000
+SUMMARY:Informational Management and Retreieval / PUSL2104
 END:VEVENT
 BEGIN:VEVENT
 UID:83018eb9022ed4f9f2c3df2445033a81b4824736@nsbm-timetable
@@ -284,12 +284,12 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:07b563ad5c6c4d3579d45d8716699148781f72bc@nsbm-timetable
+UID:bbe402c665e3c580e11dda8fe29e5475029b72bd@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261113T090000
 DTSTART;TZID=Asia/Colombo:20261113T090000
 DTEND;TZID=Asia/Colombo:20261113T120000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval / PUSL2104
 END:VEVENT
 BEGIN:VEVENT
 UID:1ad971d905e29c7a1a79918e1d1d1b3a21336477@nsbm-timetable
@@ -317,12 +317,28 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:0d83a9d9c176fde48368ae4dcdcc8f81025abf87@nsbm-timetable
+UID:ea59a41e85fdbbf3c38f8b7cbdff69ba3d3a35eb@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261119T130000
+DTSTART;TZID=Asia/Colombo:20261119T130000
+DTEND;TZID=Asia/Colombo:20261119T160000
+SUMMARY:PUSL2104
+END:VEVENT
+BEGIN:VEVENT
+UID:9ac8b53ef36ca78446812a1dbca2133e89f7a31c@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261120T090000
 DTSTART;TZID=Asia/Colombo:20261120T090000
 DTEND;TZID=Asia/Colombo:20261120T120000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval / PUSL2104
+END:VEVENT
+BEGIN:VEVENT
+UID:a0389c68337dae404a272eb7e223733f992e2f6c@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261120T130000
+DTSTART;TZID=Asia/Colombo:20261120T130000
+DTEND;TZID=Asia/Colombo:20261120T160000
+SUMMARY:PUSL2104
 END:VEVENT
 BEGIN:VEVENT
 UID:d517062055475ae799f7f3d7dce8bb4e5b32de44@nsbm-timetable
@@ -350,12 +366,21 @@ SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
  s Analytics and Digital Decision Making (9-12)
 END:VEVENT
 BEGIN:VEVENT
-UID:3df356148a9e16867e1ce4e111ae6b890a45dea1@nsbm-timetable
+UID:777df03d5cd9aa8f6fdf5de45317d3301a3ce83d@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261126T130000
+DTSTART;TZID=Asia/Colombo:20261126T130000
+DTEND;TZID=Asia/Colombo:20261126T160000
+SUMMARY:PUSL2104
+END:VEVENT
+BEGIN:VEVENT
+UID:8669de4f44083006a5a6514b775a4c31eac8e4a8@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261210T090000
 DTSTART;TZID=Asia/Colombo:20261210T090000
 DTEND;TZID=Asia/Colombo:20261210T170000
-SUMMARY:Informational Management and Retreieval COURSE WORK SUBMISSION
+SUMMARY:Informational Management and Retreieval / PUSL2104 COURSE WORK SUB
+ MISSION
 END:VEVENT
 BEGIN:VEVENT
 UID:02cc92bb7400b35dc700af94c6bef69d65332da3@nsbm-timetable
@@ -472,11 +497,11 @@ DTEND;TZID=Asia/Colombo:20270108T170000
 SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
-UID:8f286667aa82af6a7562cd5e570ada7a7cebae08@nsbm-timetable
+UID:7a9969382ca3aac31e2473657035ff7a809b929d@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20270114T090000
 DTSTART;TZID=Asia/Colombo:20270114T090000
 DTEND;TZID=Asia/Colombo:20270114T170000
-SUMMARY:Informational Management and Retreieval EXAM
+SUMMARY:Informational Management and Retreieval / PUSL2104 EXAM
 END:VEVENT
 END:VCALENDAR
