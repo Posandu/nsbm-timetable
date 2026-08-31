@@ -50,7 +50,7 @@ UID:0e163041d11df4fb5cc75b96625fa7f51cb0a849@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260902T090000
 DTSTART;TZID=Asia/Colombo:20260902T090000
-DTEND;TZID=Asia/Colombo:20260902T110000
+DTEND;TZID=Asia/Colombo:20260902T120000
 SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
@@ -74,7 +74,7 @@ UID:723c461bd01f4b076a598478f841c69d5e1c262c@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260909T090000
 DTSTART;TZID=Asia/Colombo:20260909T090000
-DTEND;TZID=Asia/Colombo:20260909T110000
+DTEND;TZID=Asia/Colombo:20260909T120000
 SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
@@ -90,7 +90,7 @@ UID:f00e7c3f77939fd689d914cbaa69965dddf0bdbc@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260916T090000
 DTSTART;TZID=Asia/Colombo:20260916T090000
-DTEND;TZID=Asia/Colombo:20260916T110000
+DTEND;TZID=Asia/Colombo:20260916T120000
 SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
@@ -106,7 +106,7 @@ UID:620ed43027b89916fd523749776c9131e6340e2e@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260923T090000
 DTSTART;TZID=Asia/Colombo:20260923T090000
-DTEND;TZID=Asia/Colombo:20260923T110000
+DTEND;TZID=Asia/Colombo:20260923T120000
 SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
@@ -122,7 +122,7 @@ UID:06ba8c545368f48d592a66b400c344d35ee6e27d@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260930T090000
 DTSTART;TZID=Asia/Colombo:20260930T090000
-DTEND;TZID=Asia/Colombo:20260930T110000
+DTEND;TZID=Asia/Colombo:20260930T120000
 SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
@@ -142,13 +142,12 @@ DTEND;TZID=Asia/Colombo:20261006T120000
 SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:ac02103bb98c8a2ed9b090a7f20e2f4ef2bddad6@nsbm-timetable
+UID:3152349a5d061fc0d5891308dedf3a91b2a47d29@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261007T090000
 DTSTART;TZID=Asia/Colombo:20261007T090000
 DTEND;TZID=Asia/Colombo:20261007T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:303e5afe37c1566acac0ec0da3a2a90971690100@nsbm-timetable
@@ -167,13 +166,12 @@ DTEND;TZID=Asia/Colombo:20261013T120000
 SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:be2d6038fe0b99527d17537e5e82dfdf5952f82c@nsbm-timetable
+UID:68c3ff88aa3ec1eb8c1b97cca16415e5ccc88064@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261014T090000
 DTSTART;TZID=Asia/Colombo:20261014T090000
 DTEND;TZID=Asia/Colombo:20261014T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:49c5563e33f86c28a4d6dfd085f9ae6d1c35aa62@nsbm-timetable
@@ -192,13 +190,12 @@ DTEND;TZID=Asia/Colombo:20261020T120000
 SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:155921719c75fde3e12d5af107c874fdbc90c7f7@nsbm-timetable
+UID:b246d6f14443a713671728c2701d3f76ea591029@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261021T090000
 DTSTART;TZID=Asia/Colombo:20261021T090000
 DTEND;TZID=Asia/Colombo:20261021T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:62f63f1f7a737eea9946b5a9076f677a4a29f4ce@nsbm-timetable
@@ -217,13 +214,12 @@ DTEND;TZID=Asia/Colombo:20261027T120000
 SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:1ba40b73ddf84b8fe9e304d6621e93e6541b2f43@nsbm-timetable
+UID:1cadccdb2a69f26be4d474b0f9e202e0b418dde5@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261028T090000
 DTSTART;TZID=Asia/Colombo:20261028T090000
 DTEND;TZID=Asia/Colombo:20261028T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:9b74f3b9600a5d38ce979ee4036b6c14886e41d6@nsbm-timetable
@@ -242,13 +238,12 @@ DTEND;TZID=Asia/Colombo:20261103T120000
 SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:ae1d3a95b2aef91f51b24104bd9c20b8e3a15c82@nsbm-timetable
+UID:38aa1eacf8e832dd5e3085019e8bfe09c557e48e@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261104T090000
 DTSTART;TZID=Asia/Colombo:20261104T090000
 DTEND;TZID=Asia/Colombo:20261104T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:51e0f9ae6f3ed1d493509245d695fb461cc650ea@nsbm-timetable
@@ -275,13 +270,12 @@ DTEND;TZID=Asia/Colombo:20261110T120000
 SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:36db4c9c56937dc74925fc37b930c130092f21ba@nsbm-timetable
+UID:0a7cefab1642cf0e8eef117b8a88409dad830de4@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261111T090000
 DTSTART;TZID=Asia/Colombo:20261111T090000
 DTEND;TZID=Asia/Colombo:20261111T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:bbe402c665e3c580e11dda8fe29e5475029b72bd@nsbm-timetable
@@ -308,13 +302,12 @@ DTEND;TZID=Asia/Colombo:20261117T120000
 SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:db3fe390f06a1149a7e90633772f800b2d5457a7@nsbm-timetable
+UID:42cc942cb36fbe166c239eeeef8382c2d33fda95@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261118T090000
 DTSTART;TZID=Asia/Colombo:20261118T090000
 DTEND;TZID=Asia/Colombo:20261118T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:ea59a41e85fdbbf3c38f8b7cbdff69ba3d3a35eb@nsbm-timetable
@@ -357,13 +350,12 @@ DTEND;TZID=Asia/Colombo:20261124T170000
 SUMMARY:PUBLIC HOLIDAY
 END:VEVENT
 BEGIN:VEVENT
-UID:1f652b0125c194964b87c1990acbf7d17bdd303f@nsbm-timetable
+UID:c809fd71857699c1580f46911cf364b153ec5fd3@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261125T090000
 DTSTART;TZID=Asia/Colombo:20261125T090000
 DTEND;TZID=Asia/Colombo:20261125T120000
-SUMMARY:Computational Theory and Statistics for Computing (9-11) / Busines
- s Analytics and Digital Decision Making (9-12)
+SUMMARY:Computational Theory and Statistics for Computing
 END:VEVENT
 BEGIN:VEVENT
 UID:777df03d5cd9aa8f6fdf5de45317d3301a3ce83d@nsbm-timetable
