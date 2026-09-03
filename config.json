@@ -1,6 +1,6 @@
 {
   "baseUrl": "https://cal.posandu.com",
-  "lastUpdated": "2026-09-02T12:34:10.813Z",
+  "lastUpdated": "2026-09-03T07:05:06.937Z",
   "modules": {
     "PUSL2019": "Informational Management and Retreieval",
     "PUSL2107": "Applied Group Project in Emerging Technologies",
@@ -11,7 +11,8 @@
     "PUSL2076": "Data Programming in R",
     "PUSL2099": "Algorithms for Machine Learning",
     "PUSL2098": "Advanced Mathematics for AI",
-    "PUSL2102": "Business Analytics and Digital Decision Making"
+    "PUSL2102": "Business Analytics and Digital Decision Making",
+    "PUSL2104": "Network Administration and Infrastructure Management"
   },
   "degrees": [
     "SE",
@@ -48,7 +49,8 @@
       "PUSL2019",
       "PUSL2107",
       "PUSL2106",
-      "PUSL2109"
+      "PUSL2109",
+      "PUSL2104"
     ],
     "SEC": [
       "PUSL2019",

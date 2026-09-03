@@ -109,7 +109,8 @@ SEQUENCE:0
 DTSTAMP:20261008T130000
 DTSTART;TZID=Asia/Colombo:20261008T130000
 DTEND;TZID=Asia/Colombo:20261008T160000
-SUMMARY:Informational Management and Retreieval(1-3)/ PUSL2104(1-4)
+SUMMARY:Informational Management and Retreieval(1-3)/ Network Administrati
+ on and Infrastructure Management(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:c800fd93746c6753eb30223da660b11571a5017d@nsbm-timetable
@@ -135,7 +136,8 @@ SEQUENCE:0
 DTSTAMP:20261015T130000
 DTSTART;TZID=Asia/Colombo:20261015T130000
 DTEND;TZID=Asia/Colombo:20261015T160000
-SUMMARY:Informational Management and Retreieval(1-3)/ PUSL2104(1-4)
+SUMMARY:Informational Management and Retreieval(1-3)/ Network Administrati
+ on and Infrastructure Management(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:0d414ac4de99d9298f8588650f444bb1beb62597@nsbm-timetable
@@ -161,7 +163,8 @@ SEQUENCE:0
 DTSTAMP:20261022T130000
 DTSTART;TZID=Asia/Colombo:20261022T130000
 DTEND;TZID=Asia/Colombo:20261022T170000
-SUMMARY:Informational Management and Retreieval/ PUSL2104(1-4)
+SUMMARY:Informational Management and Retreieval/ Network Administration an
+ d Infrastructure Management(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:1211e4e7b017538a54dac0219f8c9ac87de1065c@nsbm-timetable
@@ -187,7 +190,8 @@ SEQUENCE:0
 DTSTAMP:20261029T130000
 DTSTART;TZID=Asia/Colombo:20261029T130000
 DTEND;TZID=Asia/Colombo:20261029T170000
-SUMMARY:Informational Management and Retreieval/ PUSL2104(1-4)
+SUMMARY:Informational Management and Retreieval/ Network Administration an
+ d Infrastructure Management(1-4)
 END:VEVENT
 BEGIN:VEVENT
 UID:c069272b6a4aaefda145044b656f8ec2787226db@nsbm-timetable
@@ -221,7 +225,8 @@ SEQUENCE:0
 DTSTAMP:20261106T090000
 DTSTART;TZID=Asia/Colombo:20261106T090000
 DTEND;TZID=Asia/Colombo:20261106T120000
-SUMMARY:Informational Management and Retreieval / PUSL2104
+SUMMARY:Informational Management and Retreieval / Network Administration a
+ nd Infrastructure Management
 END:VEVENT
 BEGIN:VEVENT
 UID:bc773362e15c0fd1b0c1dcb82252a257f76ad227@nsbm-timetable
@@ -247,7 +252,8 @@ SEQUENCE:0
 DTSTAMP:20261113T090000
 DTSTART;TZID=Asia/Colombo:20261113T090000
 DTEND;TZID=Asia/Colombo:20261113T120000
-SUMMARY:Informational Management and Retreieval / PUSL2104
+SUMMARY:Informational Management and Retreieval / Network Administration a
+ nd Infrastructure Management
 END:VEVENT
 BEGIN:VEVENT
 UID:405aaae58ed3c03ef9fc9bafa9007eba3ca4a165@nsbm-timetable
@@ -277,28 +283,13 @@ SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
  g
 END:VEVENT
 BEGIN:VEVENT
-UID:ea59a41e85fdbbf3c38f8b7cbdff69ba3d3a35eb@nsbm-timetable
-SEQUENCE:0
-DTSTAMP:20261119T130000
-DTSTART;TZID=Asia/Colombo:20261119T130000
-DTEND;TZID=Asia/Colombo:20261119T160000
-SUMMARY:PUSL2104
-END:VEVENT
-BEGIN:VEVENT
 UID:9ac8b53ef36ca78446812a1dbca2133e89f7a31c@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261120T090000
 DTSTART;TZID=Asia/Colombo:20261120T090000
 DTEND;TZID=Asia/Colombo:20261120T120000
-SUMMARY:Informational Management and Retreieval / PUSL2104
-END:VEVENT
-BEGIN:VEVENT
-UID:a0389c68337dae404a272eb7e223733f992e2f6c@nsbm-timetable
-SEQUENCE:0
-DTSTAMP:20261120T130000
-DTSTART;TZID=Asia/Colombo:20261120T130000
-DTEND;TZID=Asia/Colombo:20261120T160000
-SUMMARY:PUSL2104
+SUMMARY:Informational Management and Retreieval / Network Administration a
+ nd Infrastructure Management
 END:VEVENT
 BEGIN:VEVENT
 UID:1f69ff9a679a458ff0decc3d3e342b9635700524@nsbm-timetable
@@ -327,21 +318,13 @@ SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
  g
 END:VEVENT
 BEGIN:VEVENT
-UID:777df03d5cd9aa8f6fdf5de45317d3301a3ce83d@nsbm-timetable
-SEQUENCE:0
-DTSTAMP:20261126T130000
-DTSTART;TZID=Asia/Colombo:20261126T130000
-DTEND;TZID=Asia/Colombo:20261126T160000
-SUMMARY:PUSL2104
-END:VEVENT
-BEGIN:VEVENT
 UID:8669de4f44083006a5a6514b775a4c31eac8e4a8@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261210T090000
 DTSTART;TZID=Asia/Colombo:20261210T090000
 DTEND;TZID=Asia/Colombo:20261210T170000
-SUMMARY:Informational Management and Retreieval / PUSL2104 COURSE WORK SUB
- MISSION
+SUMMARY:Informational Management and Retreieval / Network Administration a
+ nd Infrastructure Management COURSE WORK SUBMISSION
 END:VEVENT
 BEGIN:VEVENT
 UID:02cc92bb7400b35dc700af94c6bef69d65332da3@nsbm-timetable
@@ -464,6 +447,7 @@ SEQUENCE:0
 DTSTAMP:20270114T090000
 DTSTART;TZID=Asia/Colombo:20270114T090000
 DTEND;TZID=Asia/Colombo:20270114T170000
-SUMMARY:Informational Management and Retreieval / PUSL2104 EXAM
+SUMMARY:Informational Management and Retreieval / Network Administration a
+ nd Infrastructure Management EXAM
 END:VEVENT
 END:VCALENDAR
