@@ -6,7 +6,7 @@ on:
       - "ics/**"
       - "config.json"
   schedule:
-    - cron: "0 */8 * * *"
+    - cron: "0 */2 * * *"
 
 jobs:
   update_calanders:

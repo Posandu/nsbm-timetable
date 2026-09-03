@@ -5,7 +5,7 @@ export const config = {
 	fileNameWithExt: "25.3_y2_sem1.xlsx",
 	worksheetName: "25.2 & 25.3 PLY Y2S1",
 	summaryCell: "B2",
-	dataStartIndex: 17,
+	dataStartIndex: 18,
 	weekDaysArr: [4, 5, 6, 7, 8],
 	modules: {
 		PUSL2019: "Informational Management and Retreieval",
@@ -18,6 +18,7 @@ export const config = {
 		PUSL2099: "Algorithms for Machine Learning",
 		PUSL2098: "Advanced Mathematics for AI",
 		PUSL2102: "Business Analytics and Digital Decision Making",
+		PUSL2104: "Network Administration and Infrastructure Management",
 	},
 	degrees: ["SE", "CS", "CN", "SEC", "TM", "DS", "AI"],
 	degreeNames: {
@@ -32,7 +33,7 @@ export const config = {
 	degreeModules: {
 		SE: ["PUSL2019", "PUSL2107", "PUSL2106", "PUSL2109"],
 		CS: ["PUSL2019", "PUSL2107", "PUSL2106", "PUSL2018"],
-		CN: ["PUSL2019", "PUSL2107", "PUSL2106", "PUSL2109"],
+		CN: ["PUSL2019", "PUSL2107", "PUSL2106", "PUSL2109", "PUSL2104"],
 		SEC: ["PUSL2019", "PUSL2107", "PUSL2106", "PUSL2109"],
 		TM: ["PUSL2019", "PUSL2107", "PUSL2103", "PUSL2102"],
 		DS: ["PUSL2019", "PUSL2107", "PUSL2018", "PUSL2076"],
