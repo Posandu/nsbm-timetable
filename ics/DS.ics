@@ -6,12 +6,12 @@ X-WR-CALNAME:DS Timetable
 TIMEZONE-ID:Asia/Colombo
 X-WR-TIMEZONE:Asia/Colombo
 BEGIN:VEVENT
-UID:117043a7d329b59fd58bf8c52867cffdd76c23bb@nsbm-timetable
+UID:de42fa34d5cc314064621ed6e0eb73ac7b309c33@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260819T090000
 DTSTART;TZID=Asia/Colombo:20260819T090000
 DTEND;TZID=Asia/Colombo:20260819T110000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing - Ms. Hirushi
 END:VEVENT
 BEGIN:VEVENT
 UID:b8ba36dc0a707ea23d0522a9f602d0bffc6ddbb0@nsbm-timetable
@@ -46,12 +46,12 @@ DTEND;TZID=Asia/Colombo:20260827T170000
 SUMMARY:PUBLIC HOLIDAY
 END:VEVENT
 BEGIN:VEVENT
-UID:0e163041d11df4fb5cc75b96625fa7f51cb0a849@nsbm-timetable
+UID:65029f4975c0e18f954d2161a2e9cf4ebdabef15@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260902T090000
 DTSTART;TZID=Asia/Colombo:20260902T090000
 DTEND;TZID=Asia/Colombo:20260902T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing - Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
 UID:84ab0e93703f6ce06d1f2c15f96c8c15d79eec93@nsbm-timetable
@@ -70,12 +70,12 @@ DTEND;TZID=Asia/Colombo:20260904T130000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:723c461bd01f4b076a598478f841c69d5e1c262c@nsbm-timetable
+UID:e0f540014497c639021c7fb45f02bfdb8038a605@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260909T090000
 DTSTART;TZID=Asia/Colombo:20260909T090000
 DTEND;TZID=Asia/Colombo:20260909T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
 UID:0d73a49f0159e65b7a65a8329edddf9cfe7a1a2c@nsbm-timetable
@@ -86,12 +86,12 @@ DTEND;TZID=Asia/Colombo:20260910T150000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:f00e7c3f77939fd689d914cbaa69965dddf0bdbc@nsbm-timetable
+UID:65873261e1bef7aff5bd01d22979fa0feddec7b0@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260916T090000
 DTSTART;TZID=Asia/Colombo:20260916T090000
 DTEND;TZID=Asia/Colombo:20260916T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
 UID:cc18a9c5b8d8000a75a8fcb220eea18b2643b3c0@nsbm-timetable
@@ -102,12 +102,12 @@ DTEND;TZID=Asia/Colombo:20260917T150000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:620ed43027b89916fd523749776c9131e6340e2e@nsbm-timetable
+UID:7c339f0143f58e6f79d6e323463eddf2d92bad4d@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260923T090000
 DTSTART;TZID=Asia/Colombo:20260923T090000
 DTEND;TZID=Asia/Colombo:20260923T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
 UID:aafa3bf66f30a5ec62bc6ae24a78713458ca17ad@nsbm-timetable
@@ -118,12 +118,12 @@ DTEND;TZID=Asia/Colombo:20260924T150000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:06ba8c545368f48d592a66b400c344d35ee6e27d@nsbm-timetable
+UID:2d0466e2af9287a13a1b4ea0905a474e08dc5186@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260930T090000
 DTSTART;TZID=Asia/Colombo:20260930T090000
 DTEND;TZID=Asia/Colombo:20260930T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
 UID:6b357cac76fcbb1da88e5d5ffaa12dd54031c0ee@nsbm-timetable
@@ -143,12 +143,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:3152349a5d061fc0d5891308dedf3a91b2a47d29@nsbm-timetable
+UID:d02ac74a5f092f4976719d707d37d9d265ef6cd1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261007T090000
 DTSTART;TZID=Asia/Colombo:20261007T090000
 DTEND;TZID=Asia/Colombo:20261007T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing - Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
 UID:303e5afe37c1566acac0ec0da3a2a90971690100@nsbm-timetable
@@ -169,12 +169,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:68c3ff88aa3ec1eb8c1b97cca16415e5ccc88064@nsbm-timetable
+UID:b22bd9f10eacc30cfdb68ef57ed0f62696964346@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261014T090000
 DTSTART;TZID=Asia/Colombo:20261014T090000
 DTEND;TZID=Asia/Colombo:20261014T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing - Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
 UID:49c5563e33f86c28a4d6dfd085f9ae6d1c35aa62@nsbm-timetable
@@ -195,12 +195,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:b246d6f14443a713671728c2701d3f76ea591029@nsbm-timetable
+UID:322326190defdc105cae811c2731affc7eef856d@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261021T090000
 DTSTART;TZID=Asia/Colombo:20261021T090000
 DTEND;TZID=Asia/Colombo:20261021T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
 UID:62f63f1f7a737eea9946b5a9076f677a4a29f4ce@nsbm-timetable
@@ -221,12 +221,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:1cadccdb2a69f26be4d474b0f9e202e0b418dde5@nsbm-timetable
+UID:d8c18792603d1ace97c175fcf7e1c06f5ea270d7@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261028T090000
 DTSTART;TZID=Asia/Colombo:20261028T090000
 DTEND;TZID=Asia/Colombo:20261028T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing - Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
 UID:9b74f3b9600a5d38ce979ee4036b6c14886e41d6@nsbm-timetable
@@ -247,12 +247,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:38aa1eacf8e832dd5e3085019e8bfe09c557e48e@nsbm-timetable
+UID:db9b8f7c800687700e7d444d5012d9c17396ca1f@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261104T090000
 DTSTART;TZID=Asia/Colombo:20261104T090000
 DTEND;TZID=Asia/Colombo:20261104T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
 UID:51e0f9ae6f3ed1d493509245d695fb461cc650ea@nsbm-timetable
@@ -281,12 +281,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:0a7cefab1642cf0e8eef117b8a88409dad830de4@nsbm-timetable
+UID:62652ee57d606c7a1066b93d869683380b36df45@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261111T090000
 DTSTART;TZID=Asia/Colombo:20261111T090000
 DTEND;TZID=Asia/Colombo:20261111T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirush
 END:VEVENT
 BEGIN:VEVENT
 UID:bbe402c665e3c580e11dda8fe29e5475029b72bd@nsbm-timetable
@@ -316,12 +316,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:42cc942cb36fbe166c239eeeef8382c2d33fda95@nsbm-timetable
+UID:2fa889285ac7561a754473f15fc681e6ec5e0694@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261118T090000
 DTSTART;TZID=Asia/Colombo:20261118T090000
 DTEND;TZID=Asia/Colombo:20261118T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
 UID:9ac8b53ef36ca78446812a1dbca2133e89f7a31c@nsbm-timetable
@@ -350,12 +350,12 @@ DTEND;TZID=Asia/Colombo:20261124T170000
 SUMMARY:PUBLIC HOLIDAY
 END:VEVENT
 BEGIN:VEVENT
-UID:c809fd71857699c1580f46911cf364b153ec5fd3@nsbm-timetable
+UID:62bd9c62b3e75223dcf20a157abed51b3ab40243@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261125T090000
 DTSTART;TZID=Asia/Colombo:20261125T090000
 DTEND;TZID=Asia/Colombo:20261125T120000
-SUMMARY:Computational Theory and Statistics for Computing
+SUMMARY:Computational Theory and Statistics for Computing - Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
 UID:8669de4f44083006a5a6514b775a4c31eac8e4a8@nsbm-timetable
