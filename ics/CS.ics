@@ -30,12 +30,12 @@ DTEND;TZID=Asia/Colombo:20260820T150000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:d3b8cb0de322caca52009cf7d128e161ffb23651@nsbm-timetable
+UID:18f5914377709dda181ab85ec486cc7bd3ee59cd@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260821T090000
 DTSTART;TZID=Asia/Colombo:20260821T090000
 DTEND;TZID=Asia/Colombo:20260821T110000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Mr. Naji
 END:VEVENT
 BEGIN:VEVENT
 UID:644fb0134771edecfcf24f085c5f2be90b6c321d@nsbm-timetable
@@ -78,12 +78,12 @@ DTEND;TZID=Asia/Colombo:20260903T150000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:76a808857f5e2349db51d3880a5b7e950ae765a1@nsbm-timetable
+UID:3705300b62b6f07b1e5c2c4e1a767de72e3adaeb@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260904T110000
 DTSTART;TZID=Asia/Colombo:20260904T110000
 DTEND;TZID=Asia/Colombo:20260904T130000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Mr.Naji
 END:VEVENT
 BEGIN:VEVENT
 UID:e0f540014497c639021c7fb45f02bfdb8038a605@nsbm-timetable
@@ -102,12 +102,12 @@ DTEND;TZID=Asia/Colombo:20260910T110000
 SUMMARY:Introduction to IoT and Cloud Computing - Mr. Supun
 END:VEVENT
 BEGIN:VEVENT
-UID:0d73a49f0159e65b7a65a8329edddf9cfe7a1a2c@nsbm-timetable
+UID:4001c4c185e0fe57ffcc025b65d58aea6d46eba1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260910T130000
 DTSTART;TZID=Asia/Colombo:20260910T130000
 DTEND;TZID=Asia/Colombo:20260910T150000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Mr.Naji
 END:VEVENT
 BEGIN:VEVENT
 UID:65873261e1bef7aff5bd01d22979fa0feddec7b0@nsbm-timetable
@@ -315,12 +315,12 @@ SUMMARY:Informational Management and Retreieval / Network Administration a
  nd Infrastructure Management
 END:VEVENT
 BEGIN:VEVENT
-UID:62652ee57d606c7a1066b93d869683380b36df45@nsbm-timetable
+UID:35acc9911263ffadbfdc3b9f1830900695de127b@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261111T090000
 DTSTART;TZID=Asia/Colombo:20261111T090000
 DTEND;TZID=Asia/Colombo:20261111T120000
-SUMMARY:Computational Theory and Statistics for Computing -Ms Hirush
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
 UID:c572568ee850edf7a4e0331938573f2b00661e35@nsbm-timetable

@@ -14,12 +14,12 @@ DTEND;TZID=Asia/Colombo:20260820T110000
 SUMMARY:Applied Group Project in Emerging Technologies
 END:VEVENT
 BEGIN:VEVENT
-UID:d3b8cb0de322caca52009cf7d128e161ffb23651@nsbm-timetable
+UID:18f5914377709dda181ab85ec486cc7bd3ee59cd@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260821T090000
 DTSTART;TZID=Asia/Colombo:20260821T090000
 DTEND;TZID=Asia/Colombo:20260821T110000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Mr. Naji
 END:VEVENT
 BEGIN:VEVENT
 UID:644fb0134771edecfcf24f085c5f2be90b6c321d@nsbm-timetable
@@ -46,20 +46,20 @@ DTEND;TZID=Asia/Colombo:20260903T110000
 SUMMARY:Applied Group Project in Emerging Technologies
 END:VEVENT
 BEGIN:VEVENT
-UID:76a808857f5e2349db51d3880a5b7e950ae765a1@nsbm-timetable
+UID:3705300b62b6f07b1e5c2c4e1a767de72e3adaeb@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260904T110000
 DTSTART;TZID=Asia/Colombo:20260904T110000
 DTEND;TZID=Asia/Colombo:20260904T130000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Mr.Naji
 END:VEVENT
 BEGIN:VEVENT
-UID:0d73a49f0159e65b7a65a8329edddf9cfe7a1a2c@nsbm-timetable
+UID:4001c4c185e0fe57ffcc025b65d58aea6d46eba1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260910T130000
 DTSTART;TZID=Asia/Colombo:20260910T130000
 DTEND;TZID=Asia/Colombo:20260910T150000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Mr.Naji
 END:VEVENT
 BEGIN:VEVENT
 UID:cc18a9c5b8d8000a75a8fcb220eea18b2643b3c0@nsbm-timetable
