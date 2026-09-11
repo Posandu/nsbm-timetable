@@ -94,12 +94,12 @@ DTEND;TZID=Asia/Colombo:20260909T150000
 SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
-UID:78bcd5895c2c6f1ce800c6b43237e94e724a8449@nsbm-timetable
+UID:48094d1223bfb63024c1a49be6f7064f9958adad@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260910T090000
 DTSTART;TZID=Asia/Colombo:20260910T090000
 DTEND;TZID=Asia/Colombo:20260910T110000
-SUMMARY:Introduction to IoT and Cloud Computing - Mr. Supun
+SUMMARY:Introduction to IoT and Cloud Computing - Mr. Isuru
 END:VEVENT
 BEGIN:VEVENT
 UID:4001c4c185e0fe57ffcc025b65d58aea6d46eba1@nsbm-timetable
