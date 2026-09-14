@@ -94,12 +94,12 @@ DTEND;TZID=Asia/Colombo:20260916T120000
 SUMMARY:Computational Theory and Statistics for Computing -Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
-UID:cc18a9c5b8d8000a75a8fcb220eea18b2643b3c0@nsbm-timetable
+UID:7cd3415747ef61c844ea6a8c59e74294b4fd46e4@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260917T130000
 DTSTART;TZID=Asia/Colombo:20260917T130000
 DTEND;TZID=Asia/Colombo:20260917T150000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Ms.Thisarani
 END:VEVENT
 BEGIN:VEVENT
 UID:7c339f0143f58e6f79d6e323463eddf2d92bad4d@nsbm-timetable
