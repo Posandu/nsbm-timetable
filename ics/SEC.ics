@@ -150,12 +150,12 @@ DTEND;TZID=Asia/Colombo:20260924T110000
 SUMMARY:Introduction to IoT and Cloud Computing - Mr. Supun
 END:VEVENT
 BEGIN:VEVENT
-UID:aafa3bf66f30a5ec62bc6ae24a78713458ca17ad@nsbm-timetable
+UID:374a7eb7f65f453130a58f88d0b701e0a7ef85d7@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260924T130000
 DTSTART;TZID=Asia/Colombo:20260924T130000
 DTEND;TZID=Asia/Colombo:20260924T150000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Ms. Thisarani
 END:VEVENT
 BEGIN:VEVENT
 UID:658f27793adc6a23a063ce43a4cf65dc131661bd@nsbm-timetable

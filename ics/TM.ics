@@ -70,12 +70,12 @@ DTEND;TZID=Asia/Colombo:20260917T150000
 SUMMARY:Informational Management and Retreieval - Ms.Thisarani
 END:VEVENT
 BEGIN:VEVENT
-UID:aafa3bf66f30a5ec62bc6ae24a78713458ca17ad@nsbm-timetable
+UID:374a7eb7f65f453130a58f88d0b701e0a7ef85d7@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20260924T130000
 DTSTART;TZID=Asia/Colombo:20260924T130000
 DTEND;TZID=Asia/Colombo:20260924T150000
-SUMMARY:Informational Management and Retreieval
+SUMMARY:Informational Management and Retreieval - Ms. Thisarani
 END:VEVENT
 BEGIN:VEVENT
 UID:6b357cac76fcbb1da88e5d5ffaa12dd54031c0ee@nsbm-timetable
