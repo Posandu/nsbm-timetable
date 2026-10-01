@@ -174,12 +174,12 @@ DTEND;TZID=Asia/Colombo:20261001T110000
 SUMMARY:Applied Group Project in Emerging Technologies
 END:VEVENT
 BEGIN:VEVENT
-UID:3b6f3beabb7268fdd40b38028e075d69ca93b2df@nsbm-timetable
+UID:a9476c9b89d133325b7dd4206025bd756e9d8419@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261001T130000
 DTSTART;TZID=Asia/Colombo:20261001T130000
 DTEND;TZID=Asia/Colombo:20261001T150000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing- Mr Supun
 END:VEVENT
 BEGIN:VEVENT
 UID:32c5be83d096ece057b487cae1eb3f4a411f9921@nsbm-timetable
@@ -198,12 +198,12 @@ DTEND;TZID=Asia/Colombo:20261007T120000
 SUMMARY:Computational Theory and Statistics for Computing - Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
-UID:9bf8247f7a7ca2983a5a24506c1ade60bb648f7c@nsbm-timetable
+UID:040b0dfa16438dc9763136efd6a27b6e9db313d1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261008T090000
 DTSTART;TZID=Asia/Colombo:20261008T090000
 DTEND;TZID=Asia/Colombo:20261008T110000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing - Mr. Supun
 END:VEVENT
 BEGIN:VEVENT
 UID:c8c12319e075917c446931682ac04bde1f5fc3f1@nsbm-timetable
@@ -222,12 +222,12 @@ DTEND;TZID=Asia/Colombo:20261014T120000
 SUMMARY:Computational Theory and Statistics for Computing - Dr. Rasika
 END:VEVENT
 BEGIN:VEVENT
-UID:ef2c4d2606fd777382ff2baace5899a38ddb6c54@nsbm-timetable
+UID:d34fc1222d22ae70fd2adc03520c0956e00c6b1a@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261015T090000
 DTSTART;TZID=Asia/Colombo:20261015T090000
 DTEND;TZID=Asia/Colombo:20261015T110000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing - Mr Isuru
 END:VEVENT
 BEGIN:VEVENT
 UID:ecb5dcb0ea8e35c6525add8456c2fb7ab5758a46@nsbm-timetable
@@ -246,12 +246,12 @@ DTEND;TZID=Asia/Colombo:20261021T120000
 SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
-UID:603e638c77eaff3b7557bb98bbb7bb6952b668da@nsbm-timetable
+UID:3596426dbfac20f1d23ce8130781e8d8910e8867@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261022T090000
 DTSTART;TZID=Asia/Colombo:20261022T090000
 DTEND;TZID=Asia/Colombo:20261022T110000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing- Mr Isuru
 END:VEVENT
 BEGIN:VEVENT
 UID:5611733f0742a42a614e4995c06a062ae7dfd505@nsbm-timetable
@@ -270,12 +270,12 @@ DTEND;TZID=Asia/Colombo:20261028T120000
 SUMMARY:Computational Theory and Statistics for Computing - Ms Hirushi
 END:VEVENT
 BEGIN:VEVENT
-UID:4e515c6da19e738ce465acebcfe1ca7e6684dc15@nsbm-timetable
+UID:4ab792499dd10bd49a0ca6cee91bd9c6b64077f9@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261029T090000
 DTSTART;TZID=Asia/Colombo:20261029T090000
 DTEND;TZID=Asia/Colombo:20261029T110000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing - Mr Isuru
 END:VEVENT
 BEGIN:VEVENT
 UID:241b6e4f0e1a5ac23fc6149b10219b093806bcf1@nsbm-timetable
@@ -302,12 +302,12 @@ DTEND;TZID=Asia/Colombo:20261105T110000
 SUMMARY:Applied Group Project in Emerging Technologies
 END:VEVENT
 BEGIN:VEVENT
-UID:1c1d90f9540eefdb655e2991d2ab5212e31699f7@nsbm-timetable
+UID:782851016fa88f31601614bde0d1e4ae80bdd800@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261105T130000
 DTSTART;TZID=Asia/Colombo:20261105T130000
 DTEND;TZID=Asia/Colombo:20261105T150000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing - Mr Isuru
 END:VEVENT
 BEGIN:VEVENT
 UID:4105800c693d70c01e71785ccf26f8551b79ba94@nsbm-timetable
