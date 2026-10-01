@@ -182,6 +182,14 @@ DTEND;TZID=Asia/Colombo:20261001T150000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
+UID:32c5be83d096ece057b487cae1eb3f4a411f9921@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261005T130000
+DTSTART;TZID=Asia/Colombo:20261005T130000
+DTEND;TZID=Asia/Colombo:20261005T150000
+SUMMARY:Plymouth Induction
+END:VEVENT
+BEGIN:VEVENT
 UID:d02ac74a5f092f4976719d707d37d9d265ef6cd1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261007T090000
@@ -198,13 +206,12 @@ DTEND;TZID=Asia/Colombo:20261008T110000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:303e5afe37c1566acac0ec0da3a2a90971690100@nsbm-timetable
+UID:c8c12319e075917c446931682ac04bde1f5fc3f1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261008T130000
 DTSTART;TZID=Asia/Colombo:20261008T130000
-DTEND;TZID=Asia/Colombo:20261008T160000
-SUMMARY:Informational Management and Retreieval(1-3)/ Network Administrati
- on and Infrastructure Management(1-4)
+DTEND;TZID=Asia/Colombo:20261008T150000
+SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
 UID:b22bd9f10eacc30cfdb68ef57ed0f62696964346@nsbm-timetable
@@ -223,13 +230,12 @@ DTEND;TZID=Asia/Colombo:20261015T110000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:49c5563e33f86c28a4d6dfd085f9ae6d1c35aa62@nsbm-timetable
+UID:ecb5dcb0ea8e35c6525add8456c2fb7ab5758a46@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261015T130000
 DTSTART;TZID=Asia/Colombo:20261015T130000
-DTEND;TZID=Asia/Colombo:20261015T160000
-SUMMARY:Informational Management and Retreieval(1-3)/ Network Administrati
- on and Infrastructure Management(1-4)
+DTEND;TZID=Asia/Colombo:20261015T150000
+SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
 UID:322326190defdc105cae811c2731affc7eef856d@nsbm-timetable
@@ -248,13 +254,12 @@ DTEND;TZID=Asia/Colombo:20261022T110000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:62f63f1f7a737eea9946b5a9076f677a4a29f4ce@nsbm-timetable
+UID:5611733f0742a42a614e4995c06a062ae7dfd505@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261022T130000
 DTSTART;TZID=Asia/Colombo:20261022T130000
 DTEND;TZID=Asia/Colombo:20261022T170000
-SUMMARY:Informational Management and Retreieval/ Network Administration an
- d Infrastructure Management(1-4)
+SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
 UID:d8c18792603d1ace97c175fcf7e1c06f5ea270d7@nsbm-timetable
@@ -273,13 +278,12 @@ DTEND;TZID=Asia/Colombo:20261029T110000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:9b74f3b9600a5d38ce979ee4036b6c14886e41d6@nsbm-timetable
+UID:241b6e4f0e1a5ac23fc6149b10219b093806bcf1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261029T130000
 DTSTART;TZID=Asia/Colombo:20261029T130000
 DTEND;TZID=Asia/Colombo:20261029T170000
-SUMMARY:Informational Management and Retreieval/ Network Administration an
- d Infrastructure Management(1-4)
+SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
 UID:db9b8f7c800687700e7d444d5012d9c17396ca1f@nsbm-timetable
@@ -306,13 +310,12 @@ DTEND;TZID=Asia/Colombo:20261105T150000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:441a1a91cc91df310a063a452d7fc277debdad2e@nsbm-timetable
+UID:4105800c693d70c01e71785ccf26f8551b79ba94@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261106T090000
 DTSTART;TZID=Asia/Colombo:20261106T090000
 DTEND;TZID=Asia/Colombo:20261106T120000
-SUMMARY:Informational Management and Retreieval / Network Administration a
- nd Infrastructure Management
+SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
 UID:35acc9911263ffadbfdc3b9f1830900695de127b@nsbm-timetable
@@ -331,13 +334,12 @@ DTEND;TZID=Asia/Colombo:20261112T150000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:bbe402c665e3c580e11dda8fe29e5475029b72bd@nsbm-timetable
+UID:2ba23efebfd5af76a5fc8121b2628404da7cc975@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261113T090000
 DTSTART;TZID=Asia/Colombo:20261113T090000
 DTEND;TZID=Asia/Colombo:20261113T120000
-SUMMARY:Informational Management and Retreieval / Network Administration a
- nd Infrastructure Management
+SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
 UID:2fa889285ac7561a754473f15fc681e6ec5e0694@nsbm-timetable
@@ -356,13 +358,12 @@ DTEND;TZID=Asia/Colombo:20261119T120000
 SUMMARY:Introduction to IoT and Cloud Computing
 END:VEVENT
 BEGIN:VEVENT
-UID:9ac8b53ef36ca78446812a1dbca2133e89f7a31c@nsbm-timetable
+UID:0d83a9d9c176fde48368ae4dcdcc8f81025abf87@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261120T090000
 DTSTART;TZID=Asia/Colombo:20261120T090000
 DTEND;TZID=Asia/Colombo:20261120T120000
-SUMMARY:Informational Management and Retreieval / Network Administration a
- nd Infrastructure Management
+SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
 UID:7cee24d55c4b5216b160f47bc5ffd642dc105d59@nsbm-timetable
