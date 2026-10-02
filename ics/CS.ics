@@ -246,12 +246,13 @@ DTEND;TZID=Asia/Colombo:20261015T150000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:322326190defdc105cae811c2731affc7eef856d@nsbm-timetable
+UID:ff33548c99fed13a5cd92a0c95ec1b68e2fa417c@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261021T090000
 DTSTART;TZID=Asia/Colombo:20261021T090000
 DTEND;TZID=Asia/Colombo:20261021T120000
-SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
+ L 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:3596426dbfac20f1d23ce8130781e8d8910e8867@nsbm-timetable
@@ -270,12 +271,13 @@ DTEND;TZID=Asia/Colombo:20261022T170000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:d8c18792603d1ace97c175fcf7e1c06f5ea270d7@nsbm-timetable
+UID:988d58d845e002ba67567de0cba4c5295957186e@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261028T090000
 DTSTART;TZID=Asia/Colombo:20261028T090000
 DTEND;TZID=Asia/Colombo:20261028T120000
-SUMMARY:Computational Theory and Statistics for Computing - Ms Hirushi
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
+ L 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:4ab792499dd10bd49a0ca6cee91bd9c6b64077f9@nsbm-timetable
@@ -294,12 +296,13 @@ DTEND;TZID=Asia/Colombo:20261029T170000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:db9b8f7c800687700e7d444d5012d9c17396ca1f@nsbm-timetable
+UID:d0cbdf1522e661d176b25d91c631d8afee64e43c@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261104T090000
 DTSTART;TZID=Asia/Colombo:20261104T090000
 DTEND;TZID=Asia/Colombo:20261104T120000
-SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
+ L 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:51e0f9ae6f3ed1d493509245d695fb461cc650ea@nsbm-timetable
@@ -326,12 +329,13 @@ DTEND;TZID=Asia/Colombo:20261106T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:35acc9911263ffadbfdc3b9f1830900695de127b@nsbm-timetable
+UID:add87f17351b738445d274a0c8c6fe456cd0a6db@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261111T090000
 DTSTART;TZID=Asia/Colombo:20261111T090000
 DTEND;TZID=Asia/Colombo:20261111T120000
-SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
+ L 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:c572568ee850edf7a4e0331938573f2b00661e35@nsbm-timetable
@@ -350,20 +354,21 @@ DTEND;TZID=Asia/Colombo:20261113T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:2fa889285ac7561a754473f15fc681e6ec5e0694@nsbm-timetable
+UID:999012e044ab21bccb8198c7852030b17e1e1369@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261118T090000
 DTSTART;TZID=Asia/Colombo:20261118T090000
 DTEND;TZID=Asia/Colombo:20261118T120000
-SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
+ L 2102
 END:VEVENT
 BEGIN:VEVENT
-UID:6d2b261beb6cb4a72cadd5f303e6e4c42d49c86c@nsbm-timetable
+UID:85621291261f52f00c641b4a182e46f18a778241@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261119T090000
 DTSTART;TZID=Asia/Colombo:20261119T090000
 DTEND;TZID=Asia/Colombo:20261119T120000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing/PUSL 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:0d83a9d9c176fde48368ae4dcdcc8f81025abf87@nsbm-timetable
@@ -382,20 +387,21 @@ DTEND;TZID=Asia/Colombo:20261124T170000
 SUMMARY:PUBLIC HOLIDAY
 END:VEVENT
 BEGIN:VEVENT
-UID:62bd9c62b3e75223dcf20a157abed51b3ab40243@nsbm-timetable
+UID:8c2e33692410ab9851d2b903fbc248e326a82020@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261125T090000
 DTSTART;TZID=Asia/Colombo:20261125T090000
 DTEND;TZID=Asia/Colombo:20261125T120000
-SUMMARY:Computational Theory and Statistics for Computing - Ms Hirushi
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
+ L 2102
 END:VEVENT
 BEGIN:VEVENT
-UID:e55b5f9a812729b213ea8078b68b858e388ace02@nsbm-timetable
+UID:0c9e0e8baa5248e6f15065e05aa6523c1cbe5a50@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261126T090000
 DTSTART;TZID=Asia/Colombo:20261126T090000
 DTEND;TZID=Asia/Colombo:20261126T120000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing/PUSL 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:8669de4f44083006a5a6514b775a4c31eac8e4a8@nsbm-timetable

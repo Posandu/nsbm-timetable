@@ -207,13 +207,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:530bd417b9390442120acf8b12a8d8d7a7971989@nsbm-timetable
+UID:ca05b9db188d501aeb5e7e2b6c121af454fb87d4@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261007T140000
 DTSTART;TZID=Asia/Colombo:20261007T140000
 DTEND;TZID=Asia/Colombo:20261007T160000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
 UID:040b0dfa16438dc9763136efd6a27b6e9db313d1@nsbm-timetable
@@ -241,13 +240,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:08b7b41fa8adf8418613c0ac0f60815340e2dc84@nsbm-timetable
+UID:fa82ed0becceee369a3dda2b859321c1fbabbd41@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261014T140000
 DTSTART;TZID=Asia/Colombo:20261014T140000
 DTEND;TZID=Asia/Colombo:20261014T160000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
 UID:d34fc1222d22ae70fd2adc03520c0956e00c6b1a@nsbm-timetable
@@ -275,13 +273,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:4173154416a3a26aa27cfb9c955e6651c8cc4401@nsbm-timetable
+UID:e570c640835c1d7b7e6154439afc1e44ba75968e@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261021T140000
 DTSTART;TZID=Asia/Colombo:20261021T140000
 DTEND;TZID=Asia/Colombo:20261021T160000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
 UID:3596426dbfac20f1d23ce8130781e8d8910e8867@nsbm-timetable
@@ -309,13 +306,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:ca77136f962809659895e4439ae6c45b30c8bbf3@nsbm-timetable
+UID:ed43642321f7683b4aff384d238fea0a8306fdf0@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261028T140000
 DTSTART;TZID=Asia/Colombo:20261028T140000
 DTEND;TZID=Asia/Colombo:20261028T160000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
 UID:4ab792499dd10bd49a0ca6cee91bd9c6b64077f9@nsbm-timetable
@@ -343,13 +339,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:3c19adb4f6767841f057f77222ce3dac4347bb9b@nsbm-timetable
+UID:6612f09496457a52484e28635ed1de3a553b4a26@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261104T140000
 DTSTART;TZID=Asia/Colombo:20261104T140000
 DTEND;TZID=Asia/Colombo:20261104T160000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
 UID:51e0f9ae6f3ed1d493509245d695fb461cc650ea@nsbm-timetable
@@ -385,13 +380,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:3f0f172314db6a2feded4e870f7ff85d3b7e7179@nsbm-timetable
+UID:bc0a935160bd12905a70e24fc6b7b16493daf323@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261111T130000
 DTSTART;TZID=Asia/Colombo:20261111T130000
 DTEND;TZID=Asia/Colombo:20261111T150000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
 UID:c572568ee850edf7a4e0331938573f2b00661e35@nsbm-timetable
@@ -428,21 +422,20 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:a3c36444d627b5f4675ff758b027ac3590cac7bb@nsbm-timetable
+UID:71f785bbdfcbb8c0167d655a7eac6acaff0a0f66@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261118T140000
 DTSTART;TZID=Asia/Colombo:20261118T140000
 DTEND;TZID=Asia/Colombo:20261118T170000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
-UID:6d2b261beb6cb4a72cadd5f303e6e4c42d49c86c@nsbm-timetable
+UID:85621291261f52f00c641b4a182e46f18a778241@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261119T090000
 DTSTART;TZID=Asia/Colombo:20261119T090000
 DTEND;TZID=Asia/Colombo:20261119T120000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing/PUSL 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:0d83a9d9c176fde48368ae4dcdcc8f81025abf87@nsbm-timetable
@@ -470,21 +463,20 @@ DTEND;TZID=Asia/Colombo:20261124T170000
 SUMMARY:PUBLIC HOLIDAY
 END:VEVENT
 BEGIN:VEVENT
-UID:bb2454a67f510a2887105993497c6f126074a5cb@nsbm-timetable
+UID:4099e85c4e1255c8bff9dcdc289bff3b6d2fbc76@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261125T140000
 DTSTART;TZID=Asia/Colombo:20261125T140000
 DTEND;TZID=Asia/Colombo:20261125T170000
-SUMMARY:Software Engineering/Business Analytics and Digital Decision Makin
- g
+SUMMARY:Software Engineering
 END:VEVENT
 BEGIN:VEVENT
-UID:e55b5f9a812729b213ea8078b68b858e388ace02@nsbm-timetable
+UID:0c9e0e8baa5248e6f15065e05aa6523c1cbe5a50@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261126T090000
 DTSTART;TZID=Asia/Colombo:20261126T090000
 DTEND;TZID=Asia/Colombo:20261126T120000
-SUMMARY:Introduction to IoT and Cloud Computing
+SUMMARY:Introduction to IoT and Cloud Computing/PUSL 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:8669de4f44083006a5a6514b775a4c31eac8e4a8@nsbm-timetable
