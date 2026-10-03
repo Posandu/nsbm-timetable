@@ -142,12 +142,13 @@ DTEND;TZID=Asia/Colombo:20261005T150000
 SUMMARY:Plymouth Induction
 END:VEVENT
 BEGIN:VEVENT
-UID:f6f24e85316dd85c7c9dd74492cc1952888234e5@nsbm-timetable
+UID:4fc1b23d5774b0e70ce3dba09da56639897fc7c3@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261006T090000
 DTSTART;TZID=Asia/Colombo:20261006T090000
 DTEND;TZID=Asia/Colombo:20261006T120000
-SUMMARY:[object Object]
+SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud 
+ and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
 UID:d02ac74a5f092f4976719d707d37d9d265ef6cd1@nsbm-timetable
