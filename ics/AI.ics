@@ -223,12 +223,13 @@ DTEND;TZID=Asia/Colombo:20261106T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:df7b6f6858ac6e04326e17f8efc2a19030c9c53f@nsbm-timetable
+UID:7d1a6c27181ddd078633600d9ed6ee0e9d39b4ee@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261109T130000
 DTSTART;TZID=Asia/Colombo:20261109T130000
 DTEND;TZID=Asia/Colombo:20261109T160000
-SUMMARY:Advanced Mathematics for AI
+SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
+ cture Management
 END:VEVENT
 BEGIN:VEVENT
 UID:bc773362e15c0fd1b0c1dcb82252a257f76ad227@nsbm-timetable
