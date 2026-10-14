@@ -247,13 +247,12 @@ DTEND;TZID=Asia/Colombo:20261015T150000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:a76682ab8d1d3dbbbf18dfcdb5f76302f2f2b70e@nsbm-timetable
+UID:c77d8c96f083de1489c34aa3fcb8f9af85306065@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261020T130000
 DTSTART;TZID=Asia/Colombo:20261020T130000
 DTEND;TZID=Asia/Colombo:20261020T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:e570c640835c1d7b7e6154439afc1e44ba75968e@nsbm-timetable
@@ -280,13 +279,12 @@ DTEND;TZID=Asia/Colombo:20261022T170000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:d43ae6a5a531585d1b5c01adfe60e68e3cdf4f7e@nsbm-timetable
+UID:758072b9b4cfb1dbb90f57bf5fe915229a63a1a9@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261027T130000
 DTSTART;TZID=Asia/Colombo:20261027T130000
 DTEND;TZID=Asia/Colombo:20261027T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:ed43642321f7683b4aff384d238fea0a8306fdf0@nsbm-timetable
@@ -322,13 +320,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:1c1936ec1635615ad43bd10045cfd26d1285a488@nsbm-timetable
+UID:db852750b8465cc3746e6880a48017484c93d092@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261103T130000
 DTSTART;TZID=Asia/Colombo:20261103T130000
 DTEND;TZID=Asia/Colombo:20261103T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:6612f09496457a52484e28635ed1de3a553b4a26@nsbm-timetable
@@ -372,13 +369,12 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:b0d92c381e98b78083f59d06fac5f8c163ce9ceb@nsbm-timetable
+UID:433a32ffec9d87dd68066fa2d3943e85a3032cec@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261110T130000
 DTSTART;TZID=Asia/Colombo:20261110T130000
 DTEND;TZID=Asia/Colombo:20261110T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:bc0a935160bd12905a70e24fc6b7b16493daf323@nsbm-timetable
