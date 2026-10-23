@@ -153,12 +153,13 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:c77d8c96f083de1489c34aa3fcb8f9af85306065@nsbm-timetable
+UID:ed3bcfbeb71cbe807ff435d5690145eca1532e66@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261020T130000
 DTSTART;TZID=Asia/Colombo:20261020T130000
 DTEND;TZID=Asia/Colombo:20261020T160000
-SUMMARY:[object Object]
+SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
+ cture Management/Business Analytics and Digital Decision Making
 END:VEVENT
 BEGIN:VEVENT
 UID:5611733f0742a42a614e4995c06a062ae7dfd505@nsbm-timetable
@@ -178,12 +179,13 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:758072b9b4cfb1dbb90f57bf5fe915229a63a1a9@nsbm-timetable
+UID:b655d825dfb83d043536dbfdce2916c99b197165@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261027T130000
 DTSTART;TZID=Asia/Colombo:20261027T130000
 DTEND;TZID=Asia/Colombo:20261027T160000
-SUMMARY:[object Object]
+SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
+ cture Management/Business Analytics and Digital Decision Making
 END:VEVENT
 BEGIN:VEVENT
 UID:241b6e4f0e1a5ac23fc6149b10219b093806bcf1@nsbm-timetable
@@ -203,12 +205,13 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:db852750b8465cc3746e6880a48017484c93d092@nsbm-timetable
+UID:a57addc3a2b54114281db852347b9e7ff11565a1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261103T130000
 DTSTART;TZID=Asia/Colombo:20261103T130000
 DTEND;TZID=Asia/Colombo:20261103T160000
-SUMMARY:[object Object]
+SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
+ cture Management/Business Analytics and Digital Decision Making
 END:VEVENT
 BEGIN:VEVENT
 UID:51e0f9ae6f3ed1d493509245d695fb461cc650ea@nsbm-timetable
@@ -236,12 +239,13 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:433a32ffec9d87dd68066fa2d3943e85a3032cec@nsbm-timetable
+UID:30465e9cd1b02eb08293b8a3095af54e7a795032@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261110T130000
 DTSTART;TZID=Asia/Colombo:20261110T130000
 DTEND;TZID=Asia/Colombo:20261110T160000
-SUMMARY:[object Object]
+SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
+ cture Management/Business Analytics and Digital Decision Making
 END:VEVENT
 BEGIN:VEVENT
 UID:2ba23efebfd5af76a5fc8121b2628404da7cc975@nsbm-timetable
@@ -270,13 +274,12 @@ SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud
  and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:2fc40df4b7d5c6a832f394086b36146dd8d54dc6@nsbm-timetable
+UID:653ea953ff0238583037d330400eec38358c6575@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261118T090000
 DTSTART;TZID=Asia/Colombo:20261118T090000
 DTEND;TZID=Asia/Colombo:20261118T120000
-SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ Bus
- iness Analytics and Digital Decision Making
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:0d83a9d9c176fde48368ae4dcdcc8f81025abf87@nsbm-timetable
@@ -302,6 +305,14 @@ DTSTAMP:20261124T090000
 DTSTART;TZID=Asia/Colombo:20261124T090000
 DTEND;TZID=Asia/Colombo:20261124T170000
 SUMMARY:PUBLIC HOLIDAY
+END:VEVENT
+BEGIN:VEVENT
+UID:532d97b2c5d0bb3e2a4494147e87bbcf6c929e0d@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261125T090000
+DTSTART;TZID=Asia/Colombo:20261125T090000
+DTEND;TZID=Asia/Colombo:20261125T120000
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:8669de4f44083006a5a6514b775a4c31eac8e4a8@nsbm-timetable
