@@ -322,13 +322,20 @@ SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
  cture Management
 END:VEVENT
 BEGIN:VEVENT
-UID:a57addc3a2b54114281db852347b9e7ff11565a1@nsbm-timetable
+UID:d2de0e15462e3fbca9e0d4cb6f57ab653f7cf007@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261103T090000
+DTSTART;TZID=Asia/Colombo:20261103T090000
+DTEND;TZID=Asia/Colombo:20261103T120000
+SUMMARY:[object Object]
+END:VEVENT
+BEGIN:VEVENT
+UID:db852750b8465cc3746e6880a48017484c93d092@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261103T130000
 DTSTART;TZID=Asia/Colombo:20261103T130000
 DTEND;TZID=Asia/Colombo:20261103T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management/Business Analytics and Digital Decision Making
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:6612f09496457a52484e28635ed1de3a553b4a26@nsbm-timetable
@@ -363,22 +370,29 @@ DTEND;TZID=Asia/Colombo:20261106T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:7d1a6c27181ddd078633600d9ed6ee0e9d39b4ee@nsbm-timetable
+UID:3ad93c96af1d2fa4b40fe5164e6fe95bfcb01888@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261109T130000
 DTSTART;TZID=Asia/Colombo:20261109T130000
 DTEND;TZID=Asia/Colombo:20261109T160000
 SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management
+ cture Management/Smart Cloud and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
-UID:30465e9cd1b02eb08293b8a3095af54e7a795032@nsbm-timetable
+UID:0098c89e8fcc4a9b8d031aa90f081871793cc9c2@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261110T090000
+DTSTART;TZID=Asia/Colombo:20261110T090000
+DTEND;TZID=Asia/Colombo:20261110T120000
+SUMMARY:[object Object]
+END:VEVENT
+BEGIN:VEVENT
+UID:433a32ffec9d87dd68066fa2d3943e85a3032cec@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261110T130000
 DTSTART;TZID=Asia/Colombo:20261110T130000
 DTEND;TZID=Asia/Colombo:20261110T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management/Business Analytics and Digital Decision Making
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:bc0a935160bd12905a70e24fc6b7b16493daf323@nsbm-timetable
@@ -405,13 +419,13 @@ DTEND;TZID=Asia/Colombo:20261113T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:3188d1de262e5de43df0ab69cfce21eba6f3f3f4@nsbm-timetable
+UID:13440d22cd4798f00c8a09987d8bd515bb5bf5ae@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261116T130000
 DTSTART;TZID=Asia/Colombo:20261116T130000
 DTEND;TZID=Asia/Colombo:20261116T160000
 SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management
+ cture Management/Smart Cloud and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
 UID:6763b8766ccb45e93d2e64af5753decda4eea9f0@nsbm-timetable
@@ -455,13 +469,13 @@ DTEND;TZID=Asia/Colombo:20261120T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:f4f64f2ce94e598743bdacc1bbc00ebed4e0020a@nsbm-timetable
+UID:dc9c0fb892cae4319740b9943361dd4c260b8859@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261123T130000
 DTSTART;TZID=Asia/Colombo:20261123T130000
 DTEND;TZID=Asia/Colombo:20261123T160000
 SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management
+ cture Management/Smart Cloud and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
 UID:7cee24d55c4b5216b160f47bc5ffd642dc105d59@nsbm-timetable

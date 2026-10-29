@@ -242,13 +242,20 @@ DTEND;TZID=Asia/Colombo:20261029T170000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:c069272b6a4aaefda145044b656f8ec2787226db@nsbm-timetable
+UID:d2de0e15462e3fbca9e0d4cb6f57ab653f7cf007@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261103T090000
 DTSTART;TZID=Asia/Colombo:20261103T090000
 DTEND;TZID=Asia/Colombo:20261103T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud 
- and AI Driven ERP Systems
+SUMMARY:[object Object]
+END:VEVENT
+BEGIN:VEVENT
+UID:db852750b8465cc3746e6880a48017484c93d092@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261103T130000
+DTSTART;TZID=Asia/Colombo:20261103T130000
+DTEND;TZID=Asia/Colombo:20261103T160000
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:db9b8f7c800687700e7d444d5012d9c17396ca1f@nsbm-timetable
@@ -275,22 +282,28 @@ DTEND;TZID=Asia/Colombo:20261106T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:4cc2cb3a6c9c1108b8a93dd82c8e23d3d7dcc597@nsbm-timetable
+UID:5b05829e2726462eb011b6159340d32fedcf70a1@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261109T090000
 DTSTART;TZID=Asia/Colombo:20261109T090000
 DTEND;TZID=Asia/Colombo:20261109T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud 
- and AI Driven ERP Systems
+SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
-UID:bc773362e15c0fd1b0c1dcb82252a257f76ad227@nsbm-timetable
+UID:0098c89e8fcc4a9b8d031aa90f081871793cc9c2@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261110T090000
 DTSTART;TZID=Asia/Colombo:20261110T090000
 DTEND;TZID=Asia/Colombo:20261110T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud 
- and AI Driven ERP Systems
+SUMMARY:[object Object]
+END:VEVENT
+BEGIN:VEVENT
+UID:433a32ffec9d87dd68066fa2d3943e85a3032cec@nsbm-timetable
+SEQUENCE:0
+DTSTAMP:20261110T130000
+DTSTART;TZID=Asia/Colombo:20261110T130000
+DTEND;TZID=Asia/Colombo:20261110T160000
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:52f6999f6eccac7fbe624254fd0951fd832191fb@nsbm-timetable
@@ -309,13 +322,12 @@ DTEND;TZID=Asia/Colombo:20261113T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:405aaae58ed3c03ef9fc9bafa9007eba3ca4a165@nsbm-timetable
+UID:1ad971d905e29c7a1a79918e1d1d1b3a21336477@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261116T090000
 DTSTART;TZID=Asia/Colombo:20261116T090000
 DTEND;TZID=Asia/Colombo:20261116T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud 
- and AI Driven ERP Systems
+SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
 UID:585494f458fddc38de2ebade770b0971b6637a05@nsbm-timetable
@@ -343,13 +355,12 @@ DTEND;TZID=Asia/Colombo:20261120T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:1f69ff9a679a458ff0decc3d3e342b9635700524@nsbm-timetable
+UID:d517062055475ae799f7f3d7dce8bb4e5b32de44@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261123T090000
 DTSTART;TZID=Asia/Colombo:20261123T090000
 DTEND;TZID=Asia/Colombo:20261123T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R/Smart Cloud 
- and AI Driven ERP Systems
+SUMMARY:Algorithms for Machine Learning/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
 UID:7cee24d55c4b5216b160f47bc5ffd642dc105d59@nsbm-timetable
