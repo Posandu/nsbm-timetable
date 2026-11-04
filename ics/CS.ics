@@ -342,12 +342,13 @@ DTEND;TZID=Asia/Colombo:20261113T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:653ea953ff0238583037d330400eec38358c6575@nsbm-timetable
+UID:2fc40df4b7d5c6a832f394086b36146dd8d54dc6@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261118T090000
 DTSTART;TZID=Asia/Colombo:20261118T090000
 DTEND;TZID=Asia/Colombo:20261118T120000
-SUMMARY:[object Object]
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ Bus
+ iness Analytics and Digital Decision Making
 END:VEVENT
 BEGIN:VEVENT
 UID:c18aa061e10c18ee8e595d166508d575b6f6971b@nsbm-timetable
@@ -374,12 +375,13 @@ DTEND;TZID=Asia/Colombo:20261124T170000
 SUMMARY:PUBLIC HOLIDAY
 END:VEVENT
 BEGIN:VEVENT
-UID:532d97b2c5d0bb3e2a4494147e87bbcf6c929e0d@nsbm-timetable
+UID:8c2e33692410ab9851d2b903fbc248e326a82020@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261125T090000
 DTSTART;TZID=Asia/Colombo:20261125T090000
 DTEND;TZID=Asia/Colombo:20261125T120000
-SUMMARY:[object Object]
+SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
+ L 2102
 END:VEVENT
 BEGIN:VEVENT
 UID:852cc9c860bfdf28467069795d4a3f1cb6dcebcd@nsbm-timetable
