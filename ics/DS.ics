@@ -275,12 +275,12 @@ DTEND;TZID=Asia/Colombo:20261106T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:5b05829e2726462eb011b6159340d32fedcf70a1@nsbm-timetable
+UID:ad3ad2501513d5cc234bc9c78fe62e53ea026f4b@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261109T090000
 DTSTART;TZID=Asia/Colombo:20261109T090000
 DTEND;TZID=Asia/Colombo:20261109T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R
+SUMMARY:Advanced Mathematics for AI/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
 UID:bc773362e15c0fd1b0c1dcb82252a257f76ad227@nsbm-timetable
@@ -308,12 +308,12 @@ DTEND;TZID=Asia/Colombo:20261113T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:1ad971d905e29c7a1a79918e1d1d1b3a21336477@nsbm-timetable
+UID:694c4ed5eeba4a4497243a0fd079a1f823ed7b1c@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261116T090000
 DTSTART;TZID=Asia/Colombo:20261116T090000
 DTEND;TZID=Asia/Colombo:20261116T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R
+SUMMARY:Advanced Mathematics for AI/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
 UID:585494f458fddc38de2ebade770b0971b6637a05@nsbm-timetable
@@ -342,12 +342,12 @@ DTEND;TZID=Asia/Colombo:20261120T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:d517062055475ae799f7f3d7dce8bb4e5b32de44@nsbm-timetable
+UID:e15826234aa2ef36351a53d2272c75762cc2ba90@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261123T090000
 DTSTART;TZID=Asia/Colombo:20261123T090000
 DTEND;TZID=Asia/Colombo:20261123T120000
-SUMMARY:Algorithms for Machine Learning/Data Programming in R
+SUMMARY:Advanced Mathematics for AI/Data Programming in R
 END:VEVENT
 BEGIN:VEVENT
 UID:7cee24d55c4b5216b160f47bc5ffd642dc105d59@nsbm-timetable

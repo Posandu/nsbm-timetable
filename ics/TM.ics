@@ -230,13 +230,13 @@ DTEND;TZID=Asia/Colombo:20261106T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:3ad93c96af1d2fa4b40fe5164e6fe95bfcb01888@nsbm-timetable
+UID:8c3c94f8fa7d78349f328159e6653883e1892dbf@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261109T130000
 DTSTART;TZID=Asia/Colombo:20261109T130000
 DTEND;TZID=Asia/Colombo:20261109T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management/Smart Cloud and AI Driven ERP Systems
+SUMMARY:Algorithms for Machine Learning/Network Administration and Infrast
+ ructure Management/Smart Cloud and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
 UID:bc773362e15c0fd1b0c1dcb82252a257f76ad227@nsbm-timetable
@@ -265,13 +265,13 @@ DTEND;TZID=Asia/Colombo:20261113T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:13440d22cd4798f00c8a09987d8bd515bb5bf5ae@nsbm-timetable
+UID:6b11b6de6a536362eb6f51e3e7262735a5db74aa@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261116T130000
 DTSTART;TZID=Asia/Colombo:20261116T130000
 DTEND;TZID=Asia/Colombo:20261116T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management/Smart Cloud and AI Driven ERP Systems
+SUMMARY:Algorithms for Machine Learning / Network Administration and Infra
+ structure Management/Smart Cloud and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
 UID:585494f458fddc38de2ebade770b0971b6637a05@nsbm-timetable
@@ -300,13 +300,13 @@ DTEND;TZID=Asia/Colombo:20261120T120000
 SUMMARY:Informational Management and Retreieval
 END:VEVENT
 BEGIN:VEVENT
-UID:dc9c0fb892cae4319740b9943361dd4c260b8859@nsbm-timetable
+UID:e1060551b417e82fa910393d18c4ada83887f2ca@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261123T130000
 DTSTART;TZID=Asia/Colombo:20261123T130000
 DTEND;TZID=Asia/Colombo:20261123T160000
-SUMMARY:Advanced Mathematics for AI / Network Administration and Infrastru
- cture Management/Smart Cloud and AI Driven ERP Systems
+SUMMARY:Algorithms for Machine Learning / Network Administration and Infra
+ structure Management/Smart Cloud and AI Driven ERP Systems
 END:VEVENT
 BEGIN:VEVENT
 UID:7cee24d55c4b5216b160f47bc5ffd642dc105d59@nsbm-timetable
