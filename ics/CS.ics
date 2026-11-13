@@ -392,12 +392,12 @@ SUMMARY:Computational Theory and Statistics for Computing -Ms Hirushi/ PUS
  L 2102
 END:VEVENT
 BEGIN:VEVENT
-UID:852cc9c860bfdf28467069795d4a3f1cb6dcebcd@nsbm-timetable
+UID:a24987909eecc766bbf8d214948991995582329c@nsbm-timetable
 SEQUENCE:0
 DTSTAMP:20261126T090000
 DTSTART;TZID=Asia/Colombo:20261126T090000
 DTEND;TZID=Asia/Colombo:20261126T120000
-SUMMARY:Introduction to IoT and Cloud Computing - Mr. Isuru /PUSL 2102
+SUMMARY:[object Object]
 END:VEVENT
 BEGIN:VEVENT
 UID:8669de4f44083006a5a6514b775a4c31eac8e4a8@nsbm-timetable
